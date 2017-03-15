@@ -1,0 +1,109 @@
+----------------------- REVIEW 1 ---------------------
+PAPER: 93
+TITLE: Abordagem e plataforma para o monitoramento de métricas estáticas de código-fonte
+AUTHORS: Paulo Meirelles, Diego Camarinha and Rafael Manzo
+
+
+----------- REVIEW -----------
+O trabalho descreve uma ferramenta de controle de métricas de software para softwares livres em geral. Em sua motivação, o trabalho descreve a importância de se aplicar métricas de software na avaliação da qualidade. Em seguida, ele faz uma pequena análise de algumas métricas em sistemas de software open source, relatando que a análise completa está na tese de doutorado do primeiro autor. A Seção 4 descreve a ferramenta proposta no artigo, chamada Mezuro, mostrando sua arquitetura, funcionalidades e exemplos de uso. Ao final ele conclui que a ferramenta proposta auxilia na análise estática de código em projetos open source, provendo um ambiente colaborativo de análise de métricas de software.
+
+O texto está muito bem escrito. Em particular, gostei bastante da discussão feita na Seção 2 (trabalhos relacionados). Aparentemente, boa parte do texto foi extraída da tese de doutorado recorrentemente citada [13]. A ferramenta é detalhadamente apresentada na Seção 4. Pela descrição feita, esta ferramenta parece robusta, de aplicação prática e de fácil configuração. Confesso que não usei a ferramenta para confirmar.
+
+Tive certa dificuldade em entender a contribuição original deste artigo. No meu entender, a contribuição seria a ferramenta Mesuro. Entretanto, a citação [12] sugere que esta ferramenta já foi publicada em evento anterior (CBSoft 2012). Além disso, o início da Seção 4 afirma que a ferramenta já existe desde 2009 (segundo parágrafo), passando por processo de re-engenharia em 2013 (terceiro parágrafo) e 2014 (quarto parágrafo). A re-engenharia incluiu modularização e remoção de bugs. Minha dúvida é: a contribuição do artigo foi esta atividade de re-engenharia do Mesuro? Os autores deveriam deixar claro qual é a contribuição particular deste artigo. Por exemplo, ressaltar a diferença entre a ferramenta original (publicada em 2012) e a ferramenta atual.
+
+Outra coisa que me deixou confuso. Os autores criticam a falta de ferramentas para análise estática de métricas de qualidade de software multi linguagem, citando as fazem isso para linguagens como Python e Ruby. Entretanto, pelo que eu entendi, a ferramenta proposta continua não analisando linguagens além de C/C++ e Java. Esperava que a ferramenta proposta fizesse análise de software em outras linguagens, principalmente em linguagens dinamicamente tipadas.
+
+Na introdução vocês criticam que a maioria dos papers nessa área analisam projetos em Java e que o Robles [20] afirma que a maioria dos projetos open source são em C. Devido ao artigo de Robles ter quase 10 anos, seus dados podem estar desatualizados. Sugiro se basear em artigos mais recentes que podem nos levar a uma análise completamente diferente sobre quais linguagens mais utilizada em projetos open source. No geral, senti falta também da inclusão nos trabalhos relacionados mais recentes (últimos 5 anos).
+
+Outros comentários menores para melhoria do artigo.
+- Na introdução vocês citam pylint como um possível software de extração de métricas em python. Entretanto, acredito que ele não faz medição. Pylint faz somente conferencia de estilo para ver se o software segue alguns padrões de qualidade. Sugiro vocês substituírem pelo Pymetrics (http://pymetrics.sourceforge.net/).
+- Deveria haver citações de fontes para as métricas listadas no segundo parágrafo da Seção 3. Seria desejável uma pequena descrição das métricas, pois algumas delas não são intuitivas. Por exemplo, o que mede a métrica “Complexidade estrutural (SC)”? Citar [13] leva a entender que as métricas foram propostas na tese (acredito que não seja verdade).
+- Na página 6, a frase “... a abordagem apresentada por Lanza e Marinescu” está incompleta.
+- Não acho intuitiva a descrição da arquitetura (Seção 4.1) usando Diagramas de Sequência. Sugiro usar diagramas estáticos da UML, como Diagrama de Classes (simplificado) ou Diagrama de Componentes.
+- Senti falta de uma avaliação da ferramenta proposta. Não sei se já fizeram isso em outros trabalhos, mas fica a dica de um experimento para verificar se a ferramenta atende seus objetivos.
+
+
+----------------------- REVIEW 2 ---------------------
+PAPER: 93
+TITLE: Abordagem e plataforma para o monitoramento de métricas estáticas de código-fonte
+AUTHORS: Paulo Meirelles, Diego Camarinha and Rafael Manzo
+
+
+----------- REVIEW -----------
+O trabalho foca em analisar métricas de código de projeto livres e enteder as características estatísticas de cada uma das 15 métricas dentro de um grupo de 38 projetos. Para realizar esse estudo foram feitas melhorias na ferramenta Mezuro.
+
+O problema estudado neste artigo é relevante visto que não existe consenso entre quais métricas e quais thresholds são bons para cada métrica. Sendo assim, uma análise estatística de um grupo de projeto é muito útil para que as métricas e os thresholds sejam compreendidos.
+
+O texto é bem organizado e isso facilita o acompanhamento das ideias dos autores. Contudo, ele tem alguns problema pontuais na escrita.
+
+De modo geral, o trabalho motiva o leitor nas duas primeiras seções e deixam claro o objetivo e o que será apresentado, porém o trabalho deixa a desejar no detalhamento da execução do estudo.
+
+A análise das métricas não foi muito bem discutida na seção 3. As métricas e números são descritos, mas elas poderiam ser explicadas usando gráficos e tabelas para facilitar a compreensão dos dados. Essa dificuldade em ler os dados dificulta entender quando as métricas são informativas dadas determinadas distribuições (usando média, mediana ou outro). Outro ponto importante que é levantando na análises dos dados é que "Em muitos casos, o indicado  ́e saber comparar o projeto com ele mesmo ao longo do tempo. Para isso, a abordagem de análise estatística, observando a distribuicão e identificando o melhor ponto (percentil) de análise se faz necessário; ao contrário de usar como parâmetro referências genéricas.", porém os dados descritos ao longo da seção não parecem ser relacionados com análises de um projeto com ele mesmo.
+
+A ferramenta Mezuro é muito interessante e foi melhorada para realizar a coleta dos dados, análise das métricas e compartilhamento dos dados dos projetos. O detalhamento da arquitetura da ferramenta é bom. Além disso, o exemplo de uso também é apresentado de maneira clara, porém não fica claro o que é novo na Mezuro. Ao que parece, ela foi reescrita e remodularizada, o que melhorou a qualidade do código e estrutura da ferramenta, mas não é pontualmente dito o que foi feito de novo em relação ao trabalho [12].
+
+As considerações finais comentam os objetivos do trabalho, porém o trabalho precisa ser mais detalhado para que as conclusões feitas sejam efetivamente válidas. Por exemplo, "Associamos qualidade do software à qualidade do código.", essa associação é feita partindo de uma análise que é puramente estatística e não de qualidade. A qualidade dos softwares utilizados na análise não é conhecida neste estudo. Somente as métricas são conhecidas, sendo assim não podendo ser definida uma associação entre a análise das métricas e a qualidade dos softwares
+
+Minha sugestão principal é dividir este trabalho em dois trabalhos detalhados: (i) uma avaliação estatística das métricas de código fonte focando na apresentação das conclusões de correlação e distribuição principalmente comparando o projeto com ele mesmo; e (ii) a apresentação da ferramenta usando um subconjunto de projeto representativos utilizados em (i).
+
+Abaixo seguem comentários por seção:
+
+resumo:
+Bom. Mostra de forma direta o objetivo do trabalho
+
+seção 1:
+- Motiva o trabalho e mostra a dificuldade de se trabalhar com métricas.
+- Detalhado o objetivo do artigo a avaliação de métricas de código em projetos livres.
+- Na avaliação são feitas análises de distribuição e correlação das métricas.
+- Para isso, foi desenvolvida uma ferramenta de análise dos projetos chamada Mezuro.
+
+seção 2:
+- Expoem as limitações do trabalhos relacionados de forma clara.
+- Alguns erros ortográficos e gramaticais.
+- Foca em estudos de análises estatísticas de métricas.
+- Faltou discutir as ferramentas relacionadas que fazem avaliação de métricas, como o SonarQube.
+
+seção 3:
+- Define o que foi feito no estudo: Análise estatística de métricas de 38 projetos.
+- Nesta seção tabelas e gráficos facilitariam bastante a compreensão dos resultados e possibilitariam a adição de mais conetúdo sobre as métricas. Isso porque os autores omitem o restante dos resultados -- "O estudo completo, contemplando as demais metricas, e discutido por Meirelles, em sua tese de doutorado "
+- Um artigo completo focando nos resultados das análises estatísticas das métricas é mais completo e interessante do que somente o fragmento de trabalho apresentado neste artigo.
+
+seção 4:
+- A ideia da ferramenta Mezuro é muito interessante. Avaliar o histórico das métricas em relação ao próprio projeto e tornar essas avaliações visíveis para comunidade é bastante promissor.
+- O detalhamento da arquitetura da ferramenta é bom. Além disso, o exemplo de uso também é apresentado de maneira clara.
+- Não fica claro o que é novo de fato na Mezuro. Ao que parece, ela foi reescrita e remodularizada, o que melhorou a qualidade da ferramenta, mas não é pontualmente dito o que foi feito de novo em relação ao trabalho [12].
+- Consequi acessar a ferramenta e achei interessante.
+
+seção 5:
+- As considerações finais comentam os objetivos do trabalho, porém o trabalho precisa ser mais detalhado para que as conclusões sejam efetivamente válidas. Por exemplo, "Associamos qualidade do software à qualidade do código.", não se pode dizer isso porque a análise é puramente estatística e não de qualidade. A qualidade dos softwares utilizados na análise não é conhecida neste estudo somente as métricas.
+- Este trabalho ficou pouco detalhado e tem potencial para ser melhorado.
+- Minha sugestão principal é dividir este trabalho em dois trabalhos aprofundados: (i) uma avaliação estatística das métricas de código fonte focando na apresentação dessas conclusões de correlação e distribuição; e (ii) a apresentação da ferramenta usando um subconjunto de projeto representativos utilizados em (i).
+
+
+----------------------- REVIEW 3 ---------------------
+PAPER: 93
+TITLE: Abordagem e plataforma para o monitoramento de métricas estáticas de código-fonte
+AUTHORS: Paulo Meirelles, Diego Camarinha and Rafael Manzo
+
+
+----------- REVIEW -----------
+O presente trabalho discute o uso de métricas de avaliação de código fonte e apresenta a plataforma Merluzo, que automatiza o processo de análise de códigos fontes, permitindo que o analista possa configurar suas métricas, definir os repositórios e a periodicidade de análise e a visualização dos resultados da análise.
+
+O trabalho trata de tema interessante e importante para o contexto do CIbSE. Porém, apresenta algumas falhas, em especial no que se relaciona a contextualizar o trabalho a uma audiência geral como a deste congresso. Por exemplo:
+
+-       Na seção 3, os autores se limitaram a dar o nome das métricas, sem prover uma descrição para cada uma.
+-       Não fica clara a ligação de cada métrica com o problema da qualidade de software. Em outras palavras, como a análise das métricas propostas, sozinhas ou em conjunto, podem ajudar a medir questões relacionadas a erros, legibilidade, flexibilidade, complexidade, segurança e outras características importantes para se determinar a qualidade do código fonte?
+-       Talvez a resposta à primeira pergunta nos ajude a compreender também o porque dos valores escolhidos para cada métrica na seção 3. Por exemplo, no trecho ¨… no caso da ACCM, observamos o percentil 75 dos dados das métricas, e não a média, para podermos sugerir seus valores como frequentes. Para C, de 0 a 3,6 muito frequente; de 3,1 a 5,3 frequente; de 5,4 a 7,0 pouco frequente, acima de 7,0 não frequente.¨, não é possível saber o porque olhar as métricas é melhor que olhar as medias e nem se compreende o porque dessas faixas de valores. O mesmo se dá para todas as outras métricas.
+-       Send o CIbSE um congresso geral de Engenharia de Software, seria importante também apresentar, em uma seção em separado, detalhes sobre a parte estatística, por ex. Definição de média, mediana, etc. O que é distribuição normal, de potencia, etc. Assim, os leitores de diferentes formação na área podem compreender melhor as justificativas e detalhes do trabalho.
+
+Quanto à apresentação, eu sugeriria que menos espaço fosse gasto com detalhes da mudanças na plataforma (o mais importante é saber como é hoje) para que as informações anteriores possam ser contempladas no texto.
+
+Na Figura 1 e no texto referente a ela no parágrafo anterior, creio que você queira dizer ¨arquitetura do sistema ANTES da reescrita da interface, não? Senao a segunda figura serve apenas como um detalhamento da primeira. De qualquer maneira, como eu disse, eu me limitaria à segunda figura, que é a descrição da plataforma atual.
+
+Notei também que, em alguns pontos, o texto parece mais um relato informal que um texto técnico, como em ¨Recentemente, passamos a ter completa autonomia para usar as tecnologias que julgávamos ser mais adequadas para solucionar nossos problemas. Eu evitaria esse tipo de construção em um artigo técnico.
+Em geral, o português é bom, apresentando apenas alguns errinhos de digitação, tais como:
+-       ¨… o processo de desenvolvimento atuais combinados com a complexidade dos problemas exacerbam falhas do software.¨ - correção: colocar uma virgule antes de ¨combinados¨ e outra após ¨problemas¨.
+-       ¨Alguns estudos baseado em análise… – correção: baseados
+-       ¨…se a média das valores...¨  – correção: dos valores
+-       ¨Mesmo estudo mais recentes…¨ - correção: estudos
+-       ¨a média é uma médida informativa¨- correção: medida informativa
