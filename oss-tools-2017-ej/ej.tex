@@ -57,116 +57,193 @@
 \section{Introduction}
 \label{sec:intro}
   Em 2009 no Brasil, uma discussão sobre uma lei de regulamentação sobre a internet
-  ficou internacionalmente conhecida pela sua relevância política, assim como
+  ficou internacionalmente conhecida pela sua relevância política bem como
   pelo formato aberto e colaborativo que foi adotado para a construção da lei.
-  A consulta esteve aberta de outubro de 2009 a 30 de maio de 2010 e recebeu,
+  Uma consulta pública esteve aberta de outubro de 2009 a 30 de maio de 2010 e recebeu,
   nas suas duas fases, aproximadamente 2.000 comentários.
-  Ainda que tenha sido inédita em construir uma legislação de forma tão aberta
+  No entanto, ainda que tenha sido inédita em construir uma legislação de forma tão aberta
   na rede, extrapolando o limite dos gabinetes e grupos organizados, vale apontar
-  que a maioria dos comentários foram feitas por uma pequena parcela dos participantes.
-  Esse padrão de engajamento relativamente limitado se repete nas outras consultas
-  interativas realizadas pelo próprio Ministério da Justiça e também por outros
-  órgãos de governo utilizando a mesma metodologia: a participação oscila entre
-  algumas dezenas ou centenas de pessoas e comentários, ainda longe do ideal de
-  inclusão esperado pelo uso de tecnologias tão abertas e acessíveis.
+  que a maioria dos comentários foram feitos por uma pequena parcela de participantes.
+  Esse padrão de engajamento relativamente limitado se repetiu em outras consultas
+  interativas realizadas. Percebemos que a participação oscila entre
+  algumas dezenas ou centenas de pessoas e comentários, o que está longe do ideal de
+  inclusão esperado pelo uso das tecnologias adotas, totalmente abertas e acessíveis.
 
   Promover a participação social é uma ação com muitos desafios que podem
   ser analisados em diferentes aspectos. Talvez o principal deles seja descobrir
   as melhores maneiras de deixar o processo no domínio  de pessoas leigas e 
   pessoas empoderadas mantendo o engajamento dos participantes. Esta estrutura
-  de discussões em fórums/threads, além de não prover uma dinâmica atrativa para
-  quem quer discutir não provê nenhuma facilidade para análises mais aprofundadas,
-  como por exemplo, identificar quais os grupos de opinião formados, ou ainda
-  que opinião é maioria ou minoria entre os participantes.
+  de discussões em fórums/threads, não provê uma dinâmica atrativa para
+  quem quer discutir. Além do mais, fica impraticável fazer análises mais aprofundadas,
+  como por exemplo, identificar quais são os grupos de opinião formados, ou ainda
+  que opinião é maioria ou minoria em uma dada consulta. Técnicas de análise
+  de sentimento por processamento de linguagem natural não teriam eficácia
+  dados os diferentes temas e contextos de cada conversas, e ainda diversos
+  idiomas na rede.
 
-  Um novo modelo de conversa encontrado na ferramenta Polis, foi então
-  utilizado em consultas públicas e trouxe uma melhora significativa na quantidade
-  de participantes.
+  O projeto Pushing Together quer utilizar um novo conceito para os debates
+  chamado aqui de participação crowdsourcing, que tem se mostrado uma ótima opção
+  para quebrar as barreiras do engajamento a abrir mais espaço para o debate. Com
+  pouco esforço, os participantes podem dar sua opinião apenas concordando
+  e/ou discordando de opiniões já explicitadas por outros participantes, é algo
+  como analisar os likes em um post do facebook.
 
+  Desta maneira, ao facilitar a interação dos usuários na conversa, conseguimos
+  aumentar a participação de usuários em x\%. Além disso, ao estruturar
+  a opinião das pessoas em termos de concordo ou não concordo, 0 ou 1, é
+  possível conseguir análises sofisticadas a respeito do que as pessoas
+  pensam sobre a discussão. E é nessas análises que o pushing together quer atua,
+  para permitir uma interação entre os diferentes grupos de opinião formados, dando
+  poderes de push para atores especiais, pessoas com perfis considerados ativistas,
+  mediadores e também os próprios 'donos' da consulta. Com o push, esses atores
+  são capazes de gerar eventos e mensagens diretas, afetando a comunicação
+  entre pessoas com diferentes opiniões. Com essa estratégia, pretendemos
+  quebrar a barreira das bolhas de opinião formadas pela arquitetura
+  atual da rede.
 
-Métricas de código-fonte estático são medidas extraídas a partir das análises
-léxica e sintática deste sem compilá-lo ou executá-lo e podem ser primitivas ou
-compostas, ou seja, formadas pela composição de uma ou mais métricas
-primitivas. Sua principal função é fornecer informações sobre complexidade,
-compreensão, testabilidade, manutenibilidade e evolução do
-código (REF).
-
-Exemplos de métricas podem ser simples como linhas de código e quantidade de
-métodos por classe ou complexas como conexões aferentes de uma classe.  Hoje
-existem diversas ferramentas para a simples extração de métricas como
-pylint\footnote{\url{http://www.pylint.org/}} (Python),
-metric\_fu\footnote{\url{https://github.com/metricfu/metric_fu}} (Ruby) e
-Analizo\footnote{\url{http://www.analizo.org/}} (C/C++ e Java), cada uma com
-diferentes graus de usabilidade, padrões e conjuntos de métricas, sendo
-necessária a criação de uma plataforma que reúna, organize e apresente essas
-informações ao usuário, em espcial, no controle da qualidade de um
-software durante sua evolução no tempo.
-
-As ferramentas de extração de métricas, em geral, não apresentam uma interface
-amigável para seres humanos lerem seus resultados e muito menos um padrão entre
-si.  Nesse contexto, este trabalho apresenta a plataforma Mezuro que
-(i) possui interface que agrupe as diversas ferramentas disponíveis;
-(ii) permita seleção e composição de métricas de forma flexível;
-(iii) mantém de um histórico de evolução;
-(iv) exibe os resultados de forma amigável;
-(v) permite ao usuário a criar seus parâmetros de interpretação conforme um
-contexto (por exemplo, linguagem de programação e domínio de aplicação).
+%Métricas de código-fonte estático são medidas extraídas a partir das análises
+%léxica e sintática deste sem compilá-lo ou executá-lo e podem ser primitivas ou
+%compostas, ou seja, formadas pela composição de uma ou mais métricas
+%primitivas. Sua principal função é fornecer informações sobre complexidade,
+%compreensão, testabilidade, manutenibilidade e evolução do
+%código (REF).
+%
+%Exemplos de métricas podem ser simples como linhas de código e quantidade de
+%métodos por classe ou complexas como conexões aferentes de uma classe.  Hoje
+%existem diversas ferramentas para a simples extração de métricas como
+%pylint\footnote{\url{http://www.pylint.org/}} (Python),
+%metric\_fu\footnote{\url{https://github.com/metricfu/metric_fu}} (Ruby) e
+%Analizo\footnote{\url{http://www.analizo.org/}} (C/C++ e Java), cada uma com
+%diferentes graus de usabilidade, padrões e conjuntos de métricas, sendo
+%necessária a criação de uma plataforma que reúna, organize e apresente essas
+%informações ao usuário, em espcial, no controle da qualidade de um
+%software durante sua evolução no tempo.
+%
+%As ferramentas de extração de métricas, em geral, não apresentam uma interface
+%amigável para seres humanos lerem seus resultados e muito menos um padrão entre
+%si.  Nesse contexto, este trabalho apresenta a plataforma Mezuro que
+%(i) possui interface que agrupe as diversas ferramentas disponíveis;
+%(ii) permita seleção e composição de métricas de forma flexível;
+%(iii) mantém de um histórico de evolução;
+%(iv) exibe os resultados de forma amigável;
+%(v) permite ao usuário a criar seus parâmetros de interpretação conforme um
+%contexto (por exemplo, linguagem de programação e domínio de aplicação).
 
 \section{Related tools}
 
-Existem duas ferramentas relacionadas com Mezuro. A primeira, o
-SonarQube\footnote{\url{http://www.sonarqube.org/}} é um \textit{software}
-livre, licenciado como LGPLv3, que oferece uma plataforma de gerenciamento de
-qualidade de código. Por meio de \textit{plugins} disponíveis através de uma
-biblioteca\footnote{\url{http://docs.codehaus.org/display/SONAR/Plugin+Library/}}.
-Em sua versão básica ele classifica problemas encontrados no código e calcula
-métricas simples de cobertura de testes e divida técnica em várias linguagens.
-Entretanto, seus melhores \textit{plugins} tem código fechado e pago como, por
-exemplo, o para análise de
-C/C++\footnote{\url{http://www.sonarsource.com/products/plugins/languages/cpp/}}.
+ Existe uma ferramenta que foi construida em cima do conceito de participação
+ crowdsourcing e que serviu de inspiração no desenvolvimento do projeto Pushing
+ Together. O Polis\footnote{\url{https://pol.is}} oferece aos usuários a possibilidade
+ de criar uma discussão em que as pessoas fazem comentários de
+ até 140 caracteres demonstrando seu ponto de vista. Os comentários então são
+ apresentados como tópicos em cards. A interação na plataforma ocorre com outros
+ usuários concordando ou discordando de um comentário existente ou ainda por
+ adição de novos comentários à conversa.
 
-A segunda, o Code Climate\footnote{\url{https://codeclimate.com/}} é uma
-ferramenta que fornece análise de códigos JavaScript ou Ruby que estejam
-disponíveis em um servidor Git. O \textit{software} procura por ``\textit{code
-smells}'' no programa do usuário e os classifica como mais ou menos
-problemáticos levando em consideração o tamanho dos métodos e duplicação de
-blocos. Conforme os encontra, o programa atribui valores ao código para no
-final determinar uma nota de \textit{A} a \textit{F} com base no somatório dos
-valores encontrados. Note que a análise feita não necessariamente indica um
-problema real, uma vez que aquela pode ter sido a implementação escolhida pelo
-programador.
+ Representando os usuários como um vetores de 0 e 1 para as opções nas propostas
+ é possível separar grupos opinião com técnicas de clusterização de dados.
+ Com isto, o Polis apresenta vários insights sobre a discussão, entre eles, quais grupos de opinião formados, quais
+ propostas mais votadas por grupo, quais são os grupos de maioria e minoria.
 
-Idealizado como uma plataforma de métricas de código, um dos diferenciais do
-Mezuro reside na possibilidade de gerar informação sobre o código-fonte de
-forma contínua: o usuário decide quando analisar novamente o projeto e
-acompanha detalhadamente a evolução das notas ao longo do tempo. Os resultados
-de cada análise são públicos, o que permite uma maior transparência entre o
-desenvolvedor e a comunidade que utiliza aquele software. Assim, ela
-pode decidir se aquela solução atende ou não às suas necessidades e se deve
-depositar confiança na qualidade do software desenvolvido.
+%\begin{figure}[H]
+%    \centering
+%    \begin{minipage}{.5\textwidth}
+%        \centering
+%        \includegraphics[width=.9\linewidth]{images/mezuro-feature1.png}
+%        % \caption{Feature 1}
+%        \captionof{figure}{Code analysis feature.}
+%        \label{fig:feature-1}
+%    \end{minipage}%
+%    \begin{minipage}{.5\textwidth}
+%        \centering
+%        \includegraphics[width=.9\linewidth]{images/mezuro-feature2.png}
+%        \captionof{figure}{Configuration creation feature.}
+%        \label{fig:feature-2}
+%    \end{minipage}
+%\end{figure}
 
-\section{The Mezuro project}
+
+\begin{figure}[H]
+  \centering
+    \begin{minipage}{.5\textwidth}
+      \includegraphics[keepaspectratio=true,scale=0.1]{images/polis1.png}
+      \caption{Exemplo de consulta}
+      \label{fig:polis-2}
+    \end{minipage}
+    \begin{minipage}{.5\textwidth}
+      \includegraphics[keepaspectratio=true,scale=0.1]{images/polis1.png}
+      \caption{Exemplo de consulta}
+      \label{fig:polis-1}
+    \end{minipage}
+\end{figure}
+
+ Consideramos que esta ferramenta, no entanto, apresenta limitações para o projeto
+ pushing together. A primeira delas é 
+
+%Existem duas ferramentas relacionadas com Mezuro. A primeira, o
+%SonarQube\footnote{\url{http://www.sonarqube.org/}} é um \textit{software}
+%livre, licenciado como LGPLv3, que oferece uma plataforma de gerenciamento de
+%qualidade de código. Por meio de \textit{plugins} disponíveis através de uma
+%biblioteca\footnote{\url{http://docs.codehaus.org/display/SONAR/Plugin+Library/}}.
+%Em sua versão básica ele classifica problemas encontrados no código e calcula
+%métricas simples de cobertura de testes e divida técnica em várias linguagens.
+%Entretanto, seus melhores \textit{plugins} tem código fechado e pago como, por
+%exemplo, o para análise de
+%C/C++\footnote{\url{http://www.sonarsource.com/products/plugins/languages/cpp/}}.
+
+%A segunda, o Code Climate\footnote{\url{https://codeclimate.com/}} é uma
+%ferramenta que fornece análise de códigos JavaScript ou Ruby que estejam
+%disponíveis em um servidor Git. O \textit{software} procura por ``\textit{code
+%smells}'' no programa do usuário e os classifica como mais ou menos
+%problemáticos levando em consideração o tamanho dos métodos e duplicação de
+%blocos. Conforme os encontra, o programa atribui valores ao código para no
+%final determinar uma nota de \textit{A} a \textit{F} com base no somatório dos
+%valores encontrados. Note que a análise feita não necessariamente indica um
+%problema real, uma vez que aquela pode ter sido a implementação escolhida pelo
+%programador.
+%
+%Idealizado como uma plataforma de métricas de código, um dos diferenciais do
+%Mezuro reside na possibilidade de gerar informação sobre o código-fonte de
+%forma contínua: o usuário decide quando analisar novamente o projeto e
+%acompanha detalhadamente a evolução das notas ao longo do tempo. Os resultados
+%de cada análise são públicos, o que permite uma maior transparência entre o
+%desenvolvedor e a comunidade que utiliza aquele software. Assim, ela
+%pode decidir se aquela solução atende ou não às suas necessidades e se deve
+%depositar confiança na qualidade do software desenvolvido.
+
+\section{The Pushing Together project}
 \label{sec:mezuro}
 
-O Mezuro é dividido em duas partes: processamento e cálculo de métricas de
-código-fonte; e a interface gráfica para apresentação dos resultados. Hoje, o
-módulo de processamento de é o Kalibro e o módulo de visualização o Prezento,
-sendo o Mezuro o projeto inteiro, ou seja, o Kalibro integrado com o Prezento.
+O Pushing Together nasceu em uma espécie de Hackaton em Madrid, na Espanha. Uma
+imersão de 2 semanas desenvolvendo projetos para melhorar a democracia. O projeto 
+é dividido em uma aplicação front end escrita em React Native e um servidor NodeJS.
+A aplicação front end foi escolhida pela simplicidade e poder do framework gerenciado
+pelo Facebook. Com ele, é possível gerar versões do aplicativo para Android e IOS com menos esforço, em comparação com
+as versões nativas.
 
+O módulo servidor é responsável por gerenciar os usuários e os
+recursos de push da gamificação, fazendo também a interface com o módulo
+de processamento de clusters através de uma API.
+
+Devido as limitações já apresentadas sobre a plataforma Polis, um novo módulo de
+clusterização está sendo pensado para substituí-la, fornecendo os recursos
+necessários para o andamento do projeto.
+
+Desta forma,  a arquitetura do Pushing Together foi elaborada pensando-se
+em uma independência em relação ao serviço de cluster adotado.
 Desde a sua primeira implementação em 2010 (REF cbsoft 2012) até a sua
 reescrita completa, a arquitetura do sistema evoluiu até a adoção do estilo
 arquitetural de micro serviços (REF), para  (i) minimizar a quantidade de
 código a ser mantida; (ii) testar e garantir a qualidade do código; (iii)
 modularizar a aplicação em diversos serviços independentes.
 
+
 \begin{figure}[H]
   \centering
-    \includegraphics[width=\textwidth]{images/mezuro-architecture-predicted.png}
-  \caption{Arquitetura futura do sistema.}
+    \includegraphics[keepaspectratio=true,,scale=0.6]{images/architecture-1.eps}
+  \caption{Arquitetura do sistema.}
   \label{fig:architecture-2}
 \end{figure}
-
-%TODO Dylan: Possivelmente essa figura não é mais do estado atual - ver com o Manzo e Diego.
 
 A Figura \ref{fig:architecture-2} especifica o atual estado do Mezuro. As
 elipses são os diferentes softwares envolvidos e os paralelogramos as
@@ -194,8 +271,6 @@ No Mezuro, as funcionalidades podem ser divididas em dois grupos:
         \item Combinações de métricas nativas para criação de análises compostas e mais complexas.
     \end{itemize}
 \end{itemize}
-
-%TODO Dylan: Adicionar duas imagens do Mezuro, a lado a lado
 
 O Mezuro tem o formato de uma rede social, no qual os participantes podem ver a
 produção de terceiros por meio da avaliação dos projetos ou do clone das
