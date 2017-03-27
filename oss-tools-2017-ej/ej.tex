@@ -53,14 +53,13 @@
 \textbf{Keywords:} social participation, bubbles of opinion, democracy, gamification
 \end{abstract}
 
-
 \section{Introduction}
 \label{sec:intro}
   Promover a participação social é uma ação com muitos desafios que podem
   ser analisados em diferentes aspectos. Talvez o principal deles seja descobrir
   as melhores maneiras de deixar o processo no domínio  de pessoas leigas e 
   pessoas empoderadas mantendo o engajamento dos participantes. 
-  
+
   Discussões online que ocorrem da maneira comum, como em fórums/threads,
   não provêem uma dinâmica atrativa para quem quer debater. Além do mais, fica
   impraticável fazer análises mais aprofundadas com as informações geradas,
@@ -103,20 +102,19 @@
  a respeito dos grupos de opinião formados, propostas mais votadas por grupo, e
  quais propostas foram concordadas ou discordadas pela maioria.
 
-  \begin{figure}[H]
-    \centering
-      \begin{minipage}{.50\textwidth}
-        \includegraphics[width=.9\linewidth]{images/polis1.png}
-        \caption{Cards with comments}
-        \label{fig:polis-2}
-      \end{minipage}
-      \begin{minipage}{.49\textwidth}
-        \includegraphics[width=.9\linewidth]{images/polis2.png}
-        \caption{Groups of opinion formed}
-        \label{fig:polis-1}
-      \end{minipage}
-  \end{figure}
-
+ \begin{figure}[H]
+   \centering
+   \begin{minipage}{.50\textwidth}
+     \includegraphics[width=.9\linewidth]{images/polis1.png}
+     \caption{Cards with comments}
+     \label{fig:polis-2}
+   \end{minipage}
+   \begin{minipage}{.49\textwidth}
+     \includegraphics[width=.9\linewidth]{images/polis2.png}
+     \caption{Groups of opinion formed}
+     \label{fig:polis-1}
+   \end{minipage}
+ \end{figure}
 
  Esta ferramenta não contava com os recursos necessários para o desenvolvimento
  do projeto Pushing Together. Era necessário implementar a identificação dos perfis
@@ -133,61 +131,54 @@
  para a continuidade do projeto.
 
 \section{The Pushing Together project}
-\label{sec:mezuro}
+\label{sec:pushingtogether}
 
-O Pushing Together nasceu em uma espécie de Hackaton. Uma
-ideia da ONG brasileira Cidades Democráticas que participou do evento chamado Inteligência Coletiva
-para a Democracia, na cidade de Madrid, na Espanha.
+ O Pushing Together nasceu em uma espécie de Hackaton. Uma
+ ideia da ONG brasileira Cidades Democráticas que participou do evento chamado Inteligência Coletiva
+ para a Democracia, na cidade de Madrid, na Espanha.
 
-Com o objetivo de facilitar a participação e quebrar as bolhas de opinião,
-o projeto conta com um recurso que chamamos de 'Push', que é parte do conceito
-da gamificação. Os usuários que estiverem em sua posse poderão enviar mensagens
-e criar eventos dentro da plataforma.
+ Com o objetivo de facilitar a participação e quebrar as bolhas de opinião,
+ o projeto conta com um recurso que chamamos de 'Push', que é parte do conceito
+ da gamificação. Os usuários que estiverem em sua posse poderão enviar mensagens
+ e criar eventos dentro da plataforma.
 
-Fazendo uma análise sobre a opinião dos usuários em uma conversa, identificamos
-inicialmente 3 perfis que são considerados os potenciais recebedores do 'Push',
+ Fazendo uma análise sobre a opinião dos usuários em uma conversa, identificamos
+ inicialmente 3 perfis que são considerados os potenciais recebedores do 'Push',
 
-\begin{figure}[H]
-  \centering
-    \includegraphics[keepaspectratio=true,scale=0.25]{images/userprofiles.png}
-  \caption{User profiles}
-  \label{fig:architecture-2}
-\end{figure}
+ \begin{figure}[H]
+   \centering
+     \includegraphics[keepaspectratio=true,scale=0.25]{images/userprofiles.png}
+   \caption{User profiles}
+   \label{fig:architecture-2}
+ \end{figure}
 
-%\begin{itemize}
-%  \item \textbf{Activist:} Uma pessoa que está 
-%
-%  \item \textbf{Inbetweener:}
-%  \item \textbf{Owner:}
-%\end{itemize}
+ Com essa modelagem inicial dos perfis espera-se atingir um nível diferenciado
+ de interação entre as diferentes opiniões em um grupo de discussão. Essa análise
+ dos perfis ainda irá ser testada e validada até sua consolidação.
 
-Com essa modelagem inicial dos perfis espera-se atingir um nível diferenciado
-de interação entre as diferentes opiniões em um grupo de discussão. Essa análise
-dos perfis ainda irá ser testada e validada até sua consolidação.
+ Etrando agora em aspectos técnicos, o projeto é dividido em uma
+ aplicação front end escrita em React Native e um servidor NodeJS.
 
-Etrando agora em aspectos técnicos, o projeto é dividido em uma
-aplicação front end escrita em React Native e um servidor NodeJS.
+ O módulo servidor é responsável por gerenciar os usuários e os
+ recursos de push da gamificação, fazendo também a interface com o módulo externo
+ de processamento dos clusters. Toda a comunicação, tanto da aplicação front end,
+ quanto com o módulo de clusterização é feita através de uma API.
+ A figura \ref{fig:architecture-2} abaixo descreve de maneira geral essa arquitetura.
 
-O módulo servidor é responsável por gerenciar os usuários e os
-recursos de push da gamificação, fazendo também a interface com o módulo externo
-de processamento dos clusters. Toda a comunicação, tanto da aplicação front end,
-quanto com o módulo de clusterização é feita através de uma API.
-A figura \ref{fig:architecture-2} abaixo descreve de maneira geral essa arquitetura.
-
-\begin{figure}[H]
-  \centering
-    \includegraphics[keepaspectratio=true,,scale=0.5]{images/architecture-1.eps}
-  \caption{Architecture of the system}
-  \label{fig:architecture-2}
-\end{figure}
+ \begin{figure}[H]
+   \centering
+     \includegraphics[keepaspectratio=true,,scale=0.5]{images/architecture-1.eps}
+   \caption{Architecture of the system}
+   \label{fig:architecture-2}
+ \end{figure}
 
 \section{Final remarks}
 
-O Pushing Together surge como uma potencial ponte de diálogo entre a sociedade e o estado,
-fazendo uma análise diferenciada sobre as opiniões dos diferentes grupos, além
-de abrir novas possibilidades para a expressão destas opiniões com o recurso 'Push'.
-E também, o projeto nasce com um princípio de transparência e colarboração,
-para que seja possível a qualquer um se apropriar dos avanços alcançados,
-incentivando a colaboração e consequentemente evoluindo o projeto.
+ O Pushing Together surge como uma potencial ponte de diálogo entre a sociedade e o estado,
+ fazendo uma análise diferenciada sobre as opiniões dos diferentes grupos, além
+ de abrir novas possibilidades para a expressão destas opiniões com o recurso 'Push'.
+ E também, o projeto nasce com um princípio de transparência e colarboração,
+ para que seja possível a qualquer um se apropriar dos avanços alcançados,
+ incentivando a colaboração e consequentemente evoluindo o projeto.
 
 \end{document}
