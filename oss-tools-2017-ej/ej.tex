@@ -145,115 +145,58 @@
  Com isto, o Polis apresenta vários insights sobre a discussão, entre eles, quais grupos de opinião formados, quais
  propostas mais votadas por grupo, quais são os grupos de maioria e minoria.
 
-%\begin{figure}[H]
-%    \centering
-%    \begin{minipage}{.5\textwidth}
-%        \centering
-%        \includegraphics[width=.9\linewidth]{images/mezuro-feature1.png}
-%        % \caption{Feature 1}
-%        \captionof{figure}{Code analysis feature.}
-%        \label{fig:feature-1}
-%    \end{minipage}%
-%    \begin{minipage}{.5\textwidth}
-%        \centering
-%        \includegraphics[width=.9\linewidth]{images/mezuro-feature2.png}
-%        \captionof{figure}{Configuration creation feature.}
-%        \label{fig:feature-2}
-%    \end{minipage}
-%\end{figure}
+  \begin{figure}[H]
+    \centering
+      \begin{minipage}{.50\textwidth}
+        \includegraphics[width=.9\linewidth]{images/polis1.png}
+        \caption{Cards with comments}
+        \label{fig:polis-2}
+      \end{minipage}
+      \begin{minipage}{.49\textwidth}
+        \includegraphics[width=.9\linewidth]{images/polis2.png}
+        \caption{Groups of opinion formed}
+        \label{fig:polis-1}
+      \end{minipage}
+  \end{figure}
 
+ A ideia inicial do projeto era contribuir e evoluir a ferramenta Polis, de maneira
+ que fosse possível desenvolver a gamificação, suporte mobile e sistema de notificações.
+ No entanto, a comunidade Polis não demonstrou tanta abertura e tivemos dificuldades
+ em seguir essa abordagem por falta de documentação, transparência e suporte da
+ comunidade criadora do software.
 
-\begin{figure}[H]
-  \centering
-    \begin{minipage}{.5\textwidth}
-      \includegraphics[keepaspectratio=true,scale=0.1]{images/polis1.png}
-      \caption{Exemplo de consulta}
-      \label{fig:polis-2}
-    \end{minipage}
-    \begin{minipage}{.5\textwidth}
-      \includegraphics[keepaspectratio=true,scale=0.1]{images/polis1.png}
-      \caption{Exemplo de consulta}
-      \label{fig:polis-1}
-    \end{minipage}
-\end{figure}
-
- Consideramos que esta ferramenta, no entanto, apresenta limitações para o projeto
- pushing together. A primeira delas é 
-
-%Existem duas ferramentas relacionadas com Mezuro. A primeira, o
-%SonarQube\footnote{\url{http://www.sonarqube.org/}} é um \textit{software}
-%livre, licenciado como LGPLv3, que oferece uma plataforma de gerenciamento de
-%qualidade de código. Por meio de \textit{plugins} disponíveis através de uma
-%biblioteca\footnote{\url{http://docs.codehaus.org/display/SONAR/Plugin+Library/}}.
-%Em sua versão básica ele classifica problemas encontrados no código e calcula
-%métricas simples de cobertura de testes e divida técnica em várias linguagens.
-%Entretanto, seus melhores \textit{plugins} tem código fechado e pago como, por
-%exemplo, o para análise de
-%C/C++\footnote{\url{http://www.sonarsource.com/products/plugins/languages/cpp/}}.
-
-%A segunda, o Code Climate\footnote{\url{https://codeclimate.com/}} é uma
-%ferramenta que fornece análise de códigos JavaScript ou Ruby que estejam
-%disponíveis em um servidor Git. O \textit{software} procura por ``\textit{code
-%smells}'' no programa do usuário e os classifica como mais ou menos
-%problemáticos levando em consideração o tamanho dos métodos e duplicação de
-%blocos. Conforme os encontra, o programa atribui valores ao código para no
-%final determinar uma nota de \textit{A} a \textit{F} com base no somatório dos
-%valores encontrados. Note que a análise feita não necessariamente indica um
-%problema real, uma vez que aquela pode ter sido a implementação escolhida pelo
-%programador.
-%
-%Idealizado como uma plataforma de métricas de código, um dos diferenciais do
-%Mezuro reside na possibilidade de gerar informação sobre o código-fonte de
-%forma contínua: o usuário decide quando analisar novamente o projeto e
-%acompanha detalhadamente a evolução das notas ao longo do tempo. Os resultados
-%de cada análise são públicos, o que permite uma maior transparência entre o
-%desenvolvedor e a comunidade que utiliza aquele software. Assim, ela
-%pode decidir se aquela solução atende ou não às suas necessidades e se deve
-%depositar confiança na qualidade do software desenvolvido.
+ Com as barreiras encontradas, decidimos criar o sistema com uma arquitetura independente do Polis,
+ como uma capa, a um nível de abstração superior. Dessa maneira, caminhamos agora para consumir
+ serviços de um módulo de clusterização próprio, nascido para ser transparente e com uma comunidade aberta.
 
 \section{The Pushing Together project}
 \label{sec:mezuro}
 
-O Pushing Together nasceu em uma espécie de Hackaton em Madrid, na Espanha. Uma
-imersão de 2 semanas desenvolvendo projetos para melhorar a democracia. O projeto 
-é dividido em uma aplicação front end escrita em React Native e um servidor NodeJS.
-A aplicação front end foi escolhida pela simplicidade e poder do framework gerenciado
-pelo Facebook. Com ele, é possível gerar versões do aplicativo para Android e IOS com menos esforço, em comparação com
-as versões nativas.
+O Pushing Together nasceu em uma espécie de Hackaton. Uma
+ideia da ONG brasileira Cidades Democráticas que participou do evento chamado Inteligência Coletiva
+para a Democracia, na cidade de Madrid, na Espanha. O projeto é dividido em uma
+aplicação front end escrita em React Native e um servidor NodeJS.
 
 O módulo servidor é responsável por gerenciar os usuários e os
-recursos de push da gamificação, fazendo também a interface com o módulo
-de processamento de clusters através de uma API.
+recursos de push da gamificação, fazendo também a interface com o módulo externo
+de processamento dos clusters. Toda a comunicação, tanto da aplicação front end,
+quanto com o módulo de clusterização é feita através de uma API.
 
 Devido as limitações já apresentadas sobre a plataforma Polis, um novo módulo de
-clusterização está sendo pensado para substituí-la, fornecendo os recursos
-necessários para o andamento do projeto.
-
-Desta forma,  a arquitetura do Pushing Together foi elaborada pensando-se
-em uma independência em relação ao serviço de cluster adotado.
-Desde a sua primeira implementação em 2010 (REF cbsoft 2012) até a sua
-reescrita completa, a arquitetura do sistema evoluiu até a adoção do estilo
-arquitetural de micro serviços (REF), para  (i) minimizar a quantidade de
-código a ser mantida; (ii) testar e garantir a qualidade do código; (iii)
-modularizar a aplicação em diversos serviços independentes.
-
+clusterização está sendo pensado para substituir a construção iniciada em cima
+do Polis. A figura \ref{fig:architecture-2} abaixo descreve de maneira geral essa arquitetura.
 
 \begin{figure}[H]
   \centering
     \includegraphics[keepaspectratio=true,,scale=0.6]{images/architecture-1.eps}
-  \caption{Arquitetura do sistema.}
+  \caption{Architecture of the system}
   \label{fig:architecture-2}
 \end{figure}
 
-A Figura \ref{fig:architecture-2} especifica o atual estado do Mezuro. As
-elipses são os diferentes softwares envolvidos e os paralelogramos as
-interfaces de comunicação entre eles. Na base do Mezuro encontra-se o Kalibro,
-segmentado em três entidades menores (...).
-
-No Mezuro, as funcionalidades podem ser divididas em dois grupos:
+No Pushing Together então foram pensados 3 tipos de perfis a serem identificad
 
 \begin{itemize}
-  \item Projeto
+  \item Conversa
     \begin{itemize}
     \item \textit{Download} do código-fonte a partir de repositórios (Git, Subversion, Bazaar etc) ou via arquivo compactado;
         \item Escolha da periodicidade do processamento do código (1 dia, 2 dias, semanal, quinzenal e mensal);
