@@ -30,20 +30,20 @@
 \begin{abstract}
   % Contexto
   The brazilian government, as many others around the world, has been trying to
-  build technologies for social participation in a collaborative way, exploring
+  collaborativelly build technologies for social participation, exploring
   the guidance of the internet.
   % Problema
   Still, the participation process is more than just giving your opinion, it is
-  also about dialog and discussion in a way we should have clear vision about all sides,
+  about dialog and discussion in a way we should have clear vision about all sides,
   all points of view, all kind of opinions, to discuss what is the best solution
   to a problem. However, the social networks and the recommendation systems, in their
-  current design make a barrier in a way that we only receive content about
+  current design, make a barrier that we only receive content about
   what we like, about what we follow, about what our friends like. We are 
   stuck in bubbles of opinion.
   % Soluções propostas
   With this work we present Pushing Together, a free software platform
-  for collaborative participation with the aim of breaking the bubbles that
-  freezes people in their mindsets. The goal is to identify diferent groups of
+  for collaborative participation that aims for breaking the bubbles that
+  freezes people in their mindsets. The goal is to identify different groups of
   opinion in a conversation using clustering algorithms, and then give power to some
   special actors, bringing interaction between the groups.
   % Frase de impacto
@@ -60,7 +60,7 @@
   ways of keeping the process in domain of both, laypeople and empowered ones,
   holding the engagement of the participants.
 
-  Online discussions that happen in the standart ways, such as forums/threads, don’t
+  Online discussions that occurs in standard ways, such as forums/threads, do not
   provide an attractive dynamic for those who want to debate. Furthermore, it is
   impractical to do any deeper analysis with the generated information, for example,
   identify what are the opinion groups formed, or yet which opinion is majority
@@ -71,17 +71,17 @@
 
   The Pushing Together project applies a different concept for the debates,
   called crowdsourced participation, which has shown to be a great option to break the
-  the bariers for engagement and for opening more space to discussions. With little
-  effort, the participants can give their opinion from small actions,
-  something compared to a simple ‘like’ in a facebook comment.
+  the barriers for engagement and for opening more space to discussions. With little
+  effort, participants can give their opinion from small actions,
+  something comparable to facebooks 'like' feature.
 
-  Composing people’s opinion in terms of agree and disagree, 0 or 1, it is possible
-  to apply clustering algorithms to get sophisticated analysis of what people
-  think about a subject in a discussion, and that is where we act.
+  Composing people opinion in terms of agree and disagree, 0 or 1, turns possible
+  the use of clustering algorithms to get sophisticated analysis of what people
+  think about a subject in a discussion, and this is where Pushing Together act.
 
-  Analysing the opinion groups formed, we identify some profiles seen as special actors.
+  Analysing formed opinion groups, we identify some profiles seen as special actors.
   Applying concepts of gamification we give power for those actors, allowing
-  them to interact in the platform creating events and sending direct messages
+  them to interact in the platform, creating events and sending direct messages
   to others. With this strategy, we aim to change the communication and expression
   of opinion between different groups, facing what is known as bubbles of opinion,
   created by nowadays digital media.  
@@ -91,17 +91,19 @@
 \section{Related tools}
 
   There is a tool that was built on top of the crowdsourced participation concept.
-  which served as inspiration for development of the Pushing Together project.
-  The Polis\footnote{\url{https://pol.is}} is a web based platform that offers to
-  users the possibility to create discussions about any subject. Then, people put
-  140 characters comments demonstrating their point of view. The comments are
+  which served as inspiration for development of the Pushing Together project,
+  called Polis.
+
+  Polis\footnote{\url{https://pol.is}} is a web based platform that offers to
+  users the possibility to create discussions about any subject. Users can express
+  their point of view in 140 characters comments. The comments are
   presented to users as topics, on cards. The interaction on the system occur
   by others participants expressing their agreement or disagreement
   in existent comments, or yet by the addition of new ones to the conversation.
 
-  Representing users opinions as vectors of 0 and 1, the Polis applies clustering algorithms
+  Representing users opinions as vectors of 0 and 1, Polis applies clustering algorithms
   that generates information about the groups of opinion formed, the most voted
-  proposals and what proposals was agreed and disagreed by the most.
+  proposals and what proposals were agreed and disagreed by the most.
 
  \begin{figure}[H]
    \centering
@@ -117,16 +119,16 @@
    \end{minipage}
  \end{figure}
 
-  As the Polis didn’t have the necessary resources for the development of
-  the Pushing Together project, we had to implement them, like the identification of
-  the special profiles inside the clusterization, support to mobile devices, a notification
-  system and others more. The initial idea was to contribute and evolve Polis making it
+  Since Polis did not have the necessary resources for the development of
+  Pushing Together, we had to implement them, like the identification of
+  special profiles inside the clusterization, support to mobile devices, and a notification
+  system, to name a few. The initial idea was to contribute and evolve Polis making it
   possible to achieve the new features. However, their community was not so
   open and we had many difficulties through this approach. The software was miss
   documented and we saw no transparency and support from the owners and maintainers.
 
   Given the barriers we’ve found, our tool was born with an independent
-  architecture, encapsulating the Polis in a reverse engineering effort, waiting
+  architecture, encapsulating Polis in a reverse engineering effort, waiting
   for it to evolve or, being more ambitious, aiming to develop our own clustering
   service. The second option demonstrated to be more tangible and was adopted to
   give sequence for the project.
@@ -134,10 +136,10 @@
 \section{The Pushing Together project}
 \label{sec:pushingtogether}
 
-  The Pushing Together project was born in a kind of a Hackaton. An idea of the 
+  Pushing Together project was born in a kind of a Hackaton. An idea of the 
   brazilian NGO called Cidades Democráticas, which participated of an event
   called Collective Intelligence for Democracy, in Madrid, Spain at the end of
-  the year 2016.
+  2016.
 
   With the goal of making the participation an easier process and breaking the
   bubbles of opinion, the project makes use of a resource that we named ‘the Push’,
@@ -156,14 +158,15 @@
  \end{figure}
 
 
-  With this initial shaping of the profiles we intend to get a different level
-  of interaction between the multiple opinions in a group of discussion of a
-  participative process. Although, this is still to be tested and validated for
+  With this initial profiles shaping we intend to get a different interaction level
+  level between multiple opinions in a group of discussion of a
+  participative process. However, this is still to be tested and validated for
   consolidation.
 
-  From the technical aspects, the project is divided in a front end application,
-  written in React Native, and a NodeJS server. The server module is responsible
-  to manage users and the 'Push' resources in the gamification. Also, to make
+  From technical aspects, the project is divided in a front end application,
+  written in React Native\footnote{\url{https://facebook.github.io/react-native/}},
+  and a NodeJS\footnote{\url{https://nodejs.org/en/}} server. The server module is responsible
+  for manage users, for the 'Push' resources in the gamification, and to make
   the interface with the external cluster processing service. All the communication,
   with the front end application and the cluster module, is made through an API. 
   The figure \ref{fig:architecture-2} below describes this architecture in general.
@@ -176,9 +179,9 @@
  \end{figure}
 
 \section{Final remarks}
-  The Pushing Together arise as a potential bridge for dialog between the society
-  and the state, making a different analyzes about the opinion of the distinct
+  Pushing Together arise as a potential bridge for dialog between the society
+  and the state, making different analyzes about the opinion of the distinct
   groups and also opening new possibilities for the expression of these opinions
-  with the ‘Push’ resource. Besides, the project was borns with transparence and
+  with the ‘Push’ resource. Besides, the project was born with transparence and
   colaboration principles, building a base for a prospective evolution.
 \end{document}
