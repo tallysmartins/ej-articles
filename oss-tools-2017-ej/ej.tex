@@ -90,19 +90,18 @@
 
 \section{Related tools}
 
- Existe uma ferramenta que foi construida em cima do conceito de participação
- crowdsourcing e que serviu de inspiração no desenvolvimento do projeto Pushing
- Together. O Polis\footnote{\url{https://pol.is}} oferece aos usuários a possibilidade
- de criar uma discussão em que as pessoas fazem comentários de
- até 140 caracteres demonstrando seu ponto de vista. Os comentários então são
- apresentados como tópicos em cards. A interação na plataforma ocorre com outros
- usuários concordando ou discordando de um comentário existente ou ainda por
- adição de novos comentários à conversa.
+  There is a tool that was built on top of the crowdsourced participation concept.
+  which served as inspiration for development of the Pushing Together project.
+  The Polis\footnote{\url{https://pol.is}} is a web based platform that offers to
+  users the possibility to create discussions about any subject. Then, people put
+  140 characters comments demonstrating their point of view. The comments are
+  presented to users as topics, on cards. The interaction on the system occur
+  by others participants expressing their agreement or disagreement
+  in existent comments, or yet by the addition of new ones to the conversation.
 
- Representando os usuários como um vetores de 0 e 1 para as opções nas propostas
- o Polis aplica um algoritmo de clusterização pateteado e gerando informações
- a respeito dos grupos de opinião formados, propostas mais votadas por grupo, e
- quais propostas foram concordadas ou discordadas pela maioria.
+  Representing users opinions as vectors of 0 and 1, the Polis applies clustering algorithms
+  that generates information about the groups of opinion formed, the most voted
+  proposals and what proposals was agreed and disagreed by the most.
 
  \begin{figure}[H]
    \centering
@@ -118,54 +117,56 @@
    \end{minipage}
  \end{figure}
 
- Esta ferramenta não contava com os recursos necessários para o desenvolvimento
- do projeto Pushing Together. Era necessário implementar a identificação dos perfis
- chave dentro da clusterização, obter suporte mobile, criar um sistema de notificações,
- entre outros. Assim, a ideia inicial do projeto era contribuir e evoluir a ferramenta Polis
- No entanto, sua comunidade não demonstrou tanta abertura e tivemos dificuldades
- em seguir essa abordagem por falta de documentação, transparência e suporte da
- comunidade criadora do software.
+  As the Polis didn’t have the necessary resources for the development of
+  the Pushing Together project, we had to implement them, like the identification of
+  the special profiles inside the clusterization, support to mobile devices, a notification
+  system and others more. The initial idea was to contribute and evolve Polis making it
+  possible to achieve the new features. However, their community was not so
+  open and we had many difficulties through this approach. The software was miss
+  documented and we saw no transparency and support from the owners and maintainers.
 
- Com as barreiras encontradas, o projeto nasceu como um sistema arquiteturalmente
- inddependente, encapsulando o Polis em um esforço de engenharia reversa,
- com almejo de uma evolução deste ou, com mais ambição, o desenvolvimento de um serviço próprio
- de clusterização. A segunda opção demonstrou ser mais tangível e foi adotada
- para a continuidade do projeto.
+  Given the barriers we’ve found, our tool was born with an independent
+  architecture, encapsulating the Polis in a reverse engineering effort, waiting
+  for it to evolve or, being more ambitious, aiming to develop our own clustering
+  service. The second option demonstrated to be more tangible and was adopted to
+  give sequence for the project.
 
 \section{The Pushing Together project}
 \label{sec:pushingtogether}
 
- O Pushing Together nasceu em uma espécie de Hackaton. Uma
- ideia da ONG brasileira Cidades Democráticas que participou do evento chamado Inteligência Coletiva
- para a Democracia, na cidade de Madrid, na Espanha.
+  The Pushing Together project was born in a kind of a Hackaton. An idea of the 
+  brazilian NGO called Cidades Democráticas, which participated of an event
+  called Collective Intelligence for Democracy, in Madrid, Spain at the end of
+  the year 2016.
 
- Com o objetivo de facilitar a participação e quebrar as bolhas de opinião,
- o projeto conta com um recurso que chamamos de 'Push', que é parte do conceito
- da gamificação. Os usuários que estiverem em sua posse poderão enviar mensagens
- e criar eventos dentro da plataforma.
+  With the goal of making the participation an easier process and breaking the
+  bubbles of opinion, the project makes use of a resource that we named ‘the Push’,
+  which is part of the gamification concept. Users in ownership of this 'power'
+  will be able to send messages and create events inside the platform.
 
- Fazendo uma análise sobre a opinião dos usuários em uma conversa, identificamos
- inicialmente 3 perfis que são considerados os potenciais recebedores do 'Push',
+  Making an analysis about the users opinions in a conversation, we initially
+  identify three profiles that are considered the potential receptors for the “Push”
+  and some effects that can take place: 
 
  \begin{figure}[H]
    \centering
      \includegraphics[keepaspectratio=true,scale=0.25]{images/userprofiles.png}
    \caption{User profiles}
-   \label{fig:architecture-2}
+   \label{fig:userprofiles}
  \end{figure}
 
- Com essa modelagem inicial dos perfis espera-se atingir um nível diferenciado
- de interação entre as diferentes opiniões em um grupo de discussão. Essa análise
- dos perfis ainda irá ser testada e validada até sua consolidação.
 
- Etrando agora em aspectos técnicos, o projeto é dividido em uma
- aplicação front end escrita em React Native e um servidor NodeJS.
+  With this initial shaping of the profiles we intend to get a different level
+  of interaction between the multiple opinions in a group of discussion of a
+  participative process. Although, this is still to be tested and validated for
+  consolidation.
 
- O módulo servidor é responsável por gerenciar os usuários e os
- recursos de push da gamificação, fazendo também a interface com o módulo externo
- de processamento dos clusters. Toda a comunicação, tanto da aplicação front end,
- quanto com o módulo de clusterização é feita através de uma API.
- A figura \ref{fig:architecture-2} abaixo descreve de maneira geral essa arquitetura.
+  From the technical aspects, the project is divided in a front end application,
+  written in React Native, and a NodeJS server. The server module is responsible
+  to manage users and the 'Push' resources in the gamification. Also, to make
+  the interface with the external cluster processing service. All the communication,
+  with the front end application and the cluster module, is made through an API. 
+  The figure \ref{fig:architecture-2} below describes this architecture in general.
 
  \begin{figure}[H]
    \centering
@@ -175,12 +176,9 @@
  \end{figure}
 
 \section{Final remarks}
-
- O Pushing Together surge como uma potencial ponte de diálogo entre a sociedade e o estado,
- fazendo uma análise diferenciada sobre as opiniões dos diferentes grupos, além
- de abrir novas possibilidades para a expressão destas opiniões com o recurso 'Push'.
- E também, o projeto nasce com um princípio de transparência e colarboração,
- para que seja possível a qualquer um se apropriar dos avanços alcançados,
- incentivando a colaboração e consequentemente evoluindo o projeto.
-
+  The Pushing Together arise as a potential bridge for dialog between the society
+  and the state, making a different analyzes about the opinion of the distinct
+  groups and also opening new possibilities for the expression of these opinions
+  with the ‘Push’ resource. Besides, the project was borns with transparence and
+  colaboration principles, building a base for a prospective evolution.
 \end{document}
