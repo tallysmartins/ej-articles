@@ -2,11 +2,9 @@
 
 \usepackage{llncsdoc}
 \usepackage{graphicx,url}
-\usepackage[brazil]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{float}
 \usepackage{setspace}
-
 \usepackage{tabularx}
 \usepackage{cite}
 \usepackage{hyperref}
@@ -35,24 +33,24 @@
   build technologies for social collaborative participation, exploring
   the guidance of the internet.
   % Problema
-  Still, the participation process is more than just giving your opinion, it is
-  about dialog and discussion in a way we should have clear vision about all the sides,
-  all points of view, all kind of opinions, to discuss what is the best solution
+  The participation process is more than just giving your opinion. It is
+  about dialog and discussion in a way we should have clear vision on all the sides,
+  all points of view, and all kind of opinions to discuss what is the best solution
   to a problem. However, the social networks and the recommendation systems, in their
   current design, make a barrier that we only receive content about
-  what we like, about what we follow, about what our friends like. We are 
-  stuck in bubbles of opinion.
+  what we like, what we follow, and what our friends like. We are 
+  stuck in ``bubbles'' of opinion.
   % Soluções propostas
-  With this work we present Pushing Together, a free software platform
-  for collaborative participation that aims for breaking the bubbles that
+  With this work we present Pushing Together, an Open Source platform
+  for collaborative participation that aims for breaking the ``bubbles'' that
   freezes people in their mindsets. The goal is to identify different groups of
   opinion in a conversation using clustering algorithms, and then give power to some
   special actors, bringing interaction between the groups.
   % Frase de impacto
-  Through this project we hope to increase the engagement of people in terms of
+  Through this project, we hope to increase the engagement of people in terms of
   social participation and provide new resources for democracy processes.
 
-\textbf{Keywords:} social participation, bubbles of opinion, democracy, gamification
+\textbf{Keywords:} social participation, open source software, bubbles of opinion, democracy, gamification
 \end{abstract}
 
 \section{Introduction}
@@ -71,55 +69,55 @@
   given the different themes and contexts of each conversation, outside the
   limitations in working with differents idioms.
 
-  The Pushing Together project applies a different concept for the debates,
+  In this paper we present the Pushing Together project that applies a different concept for the debates,
   called crowdsourced participation, which has shown to be a great option to break the
-  the barriers for engagement and for opening more space to discussions. With little
+  barriers for engagement and for opening more space to discussions. With little
   effort, the participants can give their opinion from small actions,
-  something comparable to facebook 'like' feature. This way, participation becomes
+  something comparable to Facebook ``like'' feature. This way, participation becomes
   a scalable action for thousands of users in one click effort.
 
   Composing people opinion in terms of agree and disagree, 0 or 1, turns possible
   the use of clustering algorithms to get sophisticated analysis of what people
   think about a subject in a discussion, and this is where Pushing Together acts.
-
   Analysing formed opinion groups, we identify some profiles seen as special actors.
-  Applying concepts of gamification we give power for those actors, allowing
+  Applying concepts of gamification, we give power for those actors, allowing
   them to interact in the platform by creating events and sending direct messages
-  to others. With this strategy, we aim to change the communication and expression
+  to others. With this strategy, we aim to help to change the communication and expression
   of opinion between different groups, facing what is known as
   bubbles\footnote{\url{https://blog.pol.is/pol-is-in-taiwan-da7570d372b5}} of
-  opinion, created by nowadays digital media.  
+  opinion, created by nowadays digital media.
 
-  %TODO criar um parágrafo explicando melhor as bolhas
+  %TODO criar um parágrafo explicando melhor as bolhas.
+  % Não tem espaço.
 
 \section{Related tools}
 
-  There is a tool, called Polis\footnote{\url{https://pol.is}} that was built
+  There is a tool called Polis\footnote{\url{https://pol.is}} that was built
   on top of the crowdsourced participation concept and served as inspiration
   for development of the Pushing Together project.
 
-  The Polis is a web based platform that offers to users the possibility to 
+  The Polis is a web-based platform that offers to its users the possibility to 
   reate discussions about any subject. Users can express their point of view
-  in 140 characters comments. The comments are presented to users as topics,
+  in 140 characters comments (Figure \ref{fig:polis-1}). The comments are presented to users as topics,
   on cards. The interaction on the system occur by others participants expressing
   their agreement or disagreement in existent comments, or yet by the addition of
-  new ones to the conversation.
+  new ones to the conversation. 
 
   Representing users opinions as vectors of 0 and 1, Polis applies clustering algorithms
   that generates information about the groups of opinion formed, the most voted
-  proposals and what proposals were agreed and disagreed by the most.
+  proposals, as well as, what proposals were agreed and disagreed by the most (Figure \ref{fig:polis-2}). 
 
- \begin{figure}[H]
+ \begin{figure}[hbt]
    \centering
    \begin{minipage}{.50\textwidth}
      \includegraphics[width=.9\linewidth]{images/polis1.png}
-     \caption{Cards with comments}
-     \label{fig:polis-2}
+     \caption{Cards with comments.}
+     \label{fig:polis-1}
    \end{minipage}
    \begin{minipage}{.49\textwidth}
      \includegraphics[width=.9\linewidth]{images/polis2.png}
-     \caption{Groups of opinion formed}
-     \label{fig:polis-1}
+     \caption{Groups of opinion formed.}
+     \label{fig:polis-2}
    \end{minipage}
  \end{figure}
 
@@ -132,7 +130,7 @@
   documented, we had no support from the mainteiners, a clear sign that they
   were not interested in our contributions.
 
-  Given the barriers we’ve found, our tool was born with an independent
+  Given the barriers we have found, our tool was born with an independent
   architecture, encapsulating Polis in a reverse engineering effort, waiting
   for it to evolve or, being more ambitious, aiming to develop our own clustering
   service.
@@ -188,4 +186,5 @@
   groups and also opening new possibilities for the expression of these opinions
   with the ‘Push’ resource. Besides, the project was born with transparence and
   colaboration principles, building a base for a prospective evolution.
+
 \end{document}
