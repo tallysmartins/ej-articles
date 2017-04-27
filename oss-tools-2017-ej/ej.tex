@@ -10,6 +10,7 @@
 \usepackage{hyperref}
 
 \begin{document}
+
 \sloppy
 \title{Pushing Together: A platform for social participation}
 
@@ -76,19 +77,19 @@ click effort.
   Composing people opinion in terms of agree and disagree, 1 or -1, turns
 possible the use of clustering algorithms to get sophisticated analysis of what
 people think about a subject in a discussion, and this is where Pushing
-Together acts. We analyse opinion groups formed by an external platform called Pol.is,
+Together acts. We analyse opinion groups formed by an external platform called
+Pol.is \cite{polisSite},
 and then we identify some profiles seen as special actors in it's output.
 Applying concepts of gamification, we give power for those
 actors, allowing them to interact in our system by creating events and
 sending direct messages to others. With this strategy, we aim to help to change
 the communication and expression of opinion between different groups, facing
-what is known as
-bubbles\footnote{\url{blog.pol.is/pol-is-in-taiwan-da7570d372b5}} of opinion,
-created by nowadays digital media.
+what is known as bubbles \cite{polisInTaiwan} of opinion, created by nowadays
+digital media.
 
 \section{Related tool}
 
-  The Pol.is\footnote{\url{pol.is}} tool was built on top of
+  The Pol.is tool was built on top of
 the crowdsourced participation concept and served as inspiration for
 development of the Pushing Together project.
 
@@ -122,7 +123,8 @@ on each comment (Figure \ref{fig:polis-2}).
   However, Pol.is lacks from some features that we think that are very important
 for a participation tool. It does not offer resources to foment the communication
 between engaged people in a discussion, a big limitation for a tool that
-aims to power up collective actions. And despite Pol.is is a free software, under GPL
+aims to power up collective actions. And despite Pol.is is a free software, under
+GPLv3 \footnote{\url{https://www.gnu.org/licenses/gpl-3.0.en.html}}
 license, there were some relevant obstacles to contribute to it. Their community
 was not so open and we had many difficulties through this approach.
 The software was miss documented and we had no support from the maintainers, a
@@ -171,9 +173,8 @@ However, this is still to be tested and validated for consolidation.
  \end{figure}
 
   From the technical aspects, the project is divided in a front-end
-application, written in React
-Native\footnote{\url{facebook.github.io/react-native/}}, and a
-NodeJS\footnote{\url{nodejs.org/en/}} server. The server module is responsible
+application, written in React Native \cite{reactNativeSite}, and a
+NodeJS \cite{nodeJSSite} server. The server module is responsible
 for managing users, the ``Push'' resources in the gamification, and to make the
 interface with the external cluster processing service. All the communication,
 with the front-end application and the cluster module, is made through an API.
@@ -194,5 +195,8 @@ mobile application using mocked data and validating the user interface.  All
 the our contributions are published in open repositories available at
 \url{github.com/cidadedemocratica/pushingtogether} and
 \url{github.com/cidadedemocratica/app\_pushingtogether}.
+
+\bibliographystyle{plain}
+\bibliography{references} 
 
 \end{document}
