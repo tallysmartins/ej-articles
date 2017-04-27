@@ -28,7 +28,7 @@
 
 \maketitle
 \begin{abstract}
-  The brazilian government, as many others around the world, has been trying to
+  The Brazilian government, as many others around the world, has been trying to
 build technologies for social collaborative participation, exploring the
 guidance of the internet. The participation process is more than just giving
 your opinion. It is about dialog and discussion in a way we should have clear
@@ -92,16 +92,18 @@ the crowdsourced participation concept and served as inspiration for
 development of the Pushing Together project.
 
   The Polis is a web-based platform that offers to its users the possibility to
-reate discussions about any subject. Users can express their point of view in
+create discussions about any subject. Users can express their point of view in
 140 characters comments (Figure \ref{fig:polis-1}). The comments are presented
-to users as topics, on cards. The interaction on the system occur by others
-participants expressing their agreement or disagreement in existent comments,
-or yet by the addition of new ones to the conversation. 
+to users as topics, on cards and it's impossible to reply to a comment. The
+interaction on the system occur by participants expressing their
+agreement or disagreement in a comment, or yet by the addition of new
+ones to the conversation.
 
-  Representing users opinions as vectors of 0 and 1, Polis applies clustering
-algorithms that generates information about the groups of opinion formed, the
-most voted proposals, as well as, what proposals were agreed and disagreed by
-the most (Figure \ref{fig:polis-2}). 
+  All the information gave by participants is accounted by Pol.is' engine.
+Its uses clustering algorithms to interpret the data matrix built
+by the comments and people reactions in real-time. That matrix is processed in
+a way people can be organized in affinity groups based on how they participate
+on each comment (Figure \ref{fig:polis-2}). 
 
  \begin{figure}[hbt]
    \centering
@@ -117,24 +119,26 @@ the most (Figure \ref{fig:polis-2}).
    \end{minipage}
  \end{figure}
 
-  Since Polis did not have the necessary resources for the development of
-Pushing Together, we had to implement them, like the identification of the
-special profiles inside the clusterization, support to mobile devices, and a
-notification system, to name a few. The initial idea was to contribute and
-evolve Polis making it possible to achieve the new features. However, their
-community was not so open and we had many difficulties through this approach.
+  But Pol.is stops here. It doesn't have the necessary resources to envolve and
+give communication power to engaged people, a serious limitation for a tool that
+aims to be an alternative to encourage participants engagement on collective
+actions. Furthermore, there are some relevant obstacles to contribute to Pol.is.
+Their community was not so open and we had many difficulties through this approach.
 The software was miss documented, we had no support from the mainteiners, a
-clear sign that they were not interested in our contributions.
+clear sign that they were not interested in external contributions.
 
   Given the barriers we have found, our tool was born with an independent
-architecture, encapsulating Polis in a reverse engineering effort, waiting for
-it to evolve or, being more ambitious, aiming to develop our own clustering
-service.
+architecture that extends Pol.is adding some new features like native support
+to mobile devices and a new API. Also, Pushing Together identifies special
+profiles inside clusterization, giving for some engaged people power to
+push notifications to a specific group. It was developed encapsulating Polis in
+a reverse engineering effort, waiting for it to envolve or, being more ambitious,
+aiming to develop our own clustering service.
 
 \section{The Pushing Together project}
 \label{sec:pushingtogether}
 
-  Pushing Together project was born in a kind of a Hackaton. An idea of the
+  Pushing Together project was born in a kind of a Hackathon. An idea of the
 Brazilian non-governmental organization called Cidades Democráticas, which
 participated of an event called Collective Intelligence for Democracy, in
 Madrid, Spain at the end of 2016.
@@ -191,3 +195,4 @@ the our contributions are published in open repositories available at
 \url{github.com/cidadedemocratica/app\_pushingtogether}.
 
 \end{document}
+\grid
