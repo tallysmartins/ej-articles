@@ -1,6 +1,7 @@
 TARGET=ej
 
 all: $(TARGET).tex
+	bibtex $(TARGET)
 	pdflatex $(TARGET).tex
 	bibtex $(TARGET)
 	pdflatex $(TARGET).tex
