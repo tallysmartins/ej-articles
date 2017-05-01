@@ -31,7 +31,7 @@
 \begin{abstract}
 
 The development of the Internet has profoundly altered the social, economic
-and political dynamics around the world. At the same time, Political
+and political dynamics around the world. At the same time, political
 participation is about dialog and discussion in a way we should have clear
 vision on all the sides, all points of view, and all kind of opinions to
 discuss what is the best solution to a problem. However, the social networks
@@ -63,7 +63,7 @@ and engaging regular citizens together with laypeople and activists, in a way
 that we can have a meaningful result.
 
   Online discussions that happen in standard ways, such as forums/threads, do
-not attract those who want to debate and evenmore turns
+not attract those who want to debate, and, even more, turns
 impractical to do any deeper analysis with the generated information. There are
 some information that are important to help people engaged on online debates,
 such as identifying what are the opinion groups formed, or yet which opinion is
@@ -84,7 +84,7 @@ the barriers for engagement and for opening more space to discussions.
 possible the use of clustering algorithms to get sophisticated analysis of what
 people think about a subject in a discussion, and this is where Pushing
 Together acts. We analyse opinion groups formed by an external participation
-platform called Pol.is\footnote{\url{pol.is}},
+platform called Polis\footnote{\url{pol.is}},
 identifying some profiles seen as special actors in its output.
 Applying concepts of gamification, we give power for those
 actors, allowing them to interact in our system by creating events and
@@ -96,21 +96,21 @@ social media\footnote{\url{blog.pol.is/pol-is-in-taiwan-da7570d372b5}}.
 
 \section{Related tool}
 
-  The Pol.is was the tool that inspired Pushing Together Project and
-was built based on crowdsourced participation concept.
-It is a web-based platform that offers to its users the possibility to
-create discussions about any subject. Users can express their point of view in
+Polis was the tool that inspired Pushing Together Project and
+was built based on the crowdsourced participation concept. It
+is a web-based platform that offers to its users the possibility to
+create discussions about any subject, and has been adopted by an
+innovative political community starting with Taiwan's digital minister
+Audrey Tang. Users can express their point of view in
 140 characters comments (Figure \ref{fig:polis-1}), and the comments are presented
 to users as topics. The interaction on the system occur by
 participants expressing their agreement or disagreement in a comment, or yet by
 the addition of new ones to the conversation.
 
-  All the information about comments and people's reactions given by participants
-is accounted by Pol.is' engine.
-Then, a data matrix is built and computed by clustering algorithms. That matrix
-is processed in
-a way that people are organized in affinity groups based on how they participate
-on each comment (Figure \ref{fig:polis-2}).
+Polis applies artificial intelligence to empower people on online conversations,
+and, all the information extracted from comments and reactions are accounted by
+Polis engine. A data matrix is built and computed by clustering algorithms,
+organizing people in affinity groups (Figure \ref{fig:polis-2}).
 
  \begin{figure}[hbt]
    \centering
@@ -126,17 +126,6 @@ on each comment (Figure \ref{fig:polis-2}).
    \end{minipage}
  \end{figure}
 
-  We consider Polis one of the most promising application for public debate.
-Beyond the fact that it uses AI (Artificial Intelligence) to empower people
-on online conversations and update democracy, it has been adopted by an
-innovative political community starting with Taiwan's new digital minister
-Audrey Tang (“the hacker minister”) with very important outputs of its
-application. However, it lacks some features that we consider very important
-for a participation tool. It does not offer resources to foment the
-communication between people engaged in a discussion, a big limitation if your
-aim is to power up collective actions. That is where we place Pushing
-Together.
-
   The engagement of Polis CEO, Colin Megill, and one of its developer during the
 two week laboratory period was important for us to understand how we could use
 the Polis API on our project. At the beginning, Polis was licensed on an open
@@ -145,25 +134,19 @@ aGPLv3 \footnote{\url{https://www.gnu.org/licenses/gpl-3.0.en.html}}
 Free Software licence along the hackathon! This change was very celebrated by
 the Medialab Prado community.
 
-  But despite Pol.is had became a free software, the code is miss documented and
-very few people are able to understand it, beyond the company developers. Those
-were some relevant obstacles to contribute to it and we had many  difficulties
-through this approach. We understand that as a commercial company, Polis is
-investing in forming an user community that can use and develop on top of what
+  But despite Polis had became a free software, the code is miss documented and
+very few people are able to understand it, beyond the company developers. Also,
+Polis lacks features that we consider important for a participation tool, such
+as resources to foment communication between people engaged in a duscussion. 
+Those were some relevant obstacles to contribute to it and we had many 
+difficulties through this approach. We understand that as a commercial company,
+Polis is investing in forming an user community that can use and develop on top of what
 is already working on Polis API. And they are very open to that. But they lack
 a strategy to form a development community that can work on improvement of
 Polis technology itself. Today they are not able to deal with external
 contributions on code, even for people that want to deploy Polis on their
 development environments. This can be acceptable within the short-term, but
 will not be sustainable for the long-term.
-
-  Given those barriers, our tool was born with an independent architecture
-that extends Pol.is adding some new features like native support to mobile
-devices and a new API. Also, Pushing Together identifies special profiles
-inside the clusters to give them powers to push notifications and promote the
-communication between participants. This features was developed encapsulating
-Pol.is in a reverse engineering effort, waiting for it to evolve or, being more
-ambitious, aiming to develop our own clustering service.
 
 \section{The Pushing Together project}
 \label{sec:pushingtogether}
@@ -179,19 +162,12 @@ push notifications resource that we named ``the Push'', which is part of gamific
 concept. Users in ownership of this ``power'' are able to send
 messages and create events to engage participants inside the platform.
 
- \begin{figure}[hbt]
-   \centering
-     \includegraphics[keepaspectratio=true,scale=0.45]{images/userprofiles.png}
-   \caption{User profiles}
-   \label{fig:userprofiles}
- \end{figure}
-
-  Making an analysis about the users opinions, we initially identify three
-profiles (Figure \ref{fig:userprofiles}) that are considered the potential
-receptors for ``the Push'' power and some effects that can take place. With this
-initial profiles we intend to get a different interaction level between
-the multiple opinions groups of participative processes. However, this is still
-to be tested and validated for consolidation.
+ Making an analysis about the users opinions, we initially identify three
+ profiles based on their position on Polis dashboard, that are considered the potential
+ receptors for ``the Push'' power with its derivative effects. With this
+ initial profiles we intend to get a different interaction level between
+ the multiple opinions groups of participative processes. However, this is still
+ to be tested and validated for consolidation.
 
  \begin{figure}[hbt]
    \centering
@@ -204,10 +180,8 @@ to be tested and validated for consolidation.
 application, written in React Native\footnote{\url{facebook.github.io/react-native}}
 NodeJS\footnote{\url{nodejs.org/en}} server. The server module is responsible
 for managing users, ``the Push'' resources for the gamification, and to make the
-interface with the external cluster processing service. All the communication,
-with the front-end application and the cluster module, is made through an API.
-The Figure \ref{fig:architecture-2} describes this architecture in
-general.
+interface with the external cluster processing service, for which we reverse
+engineered Polis.
 
 \section{Final remarks}
 
