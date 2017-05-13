@@ -1,5 +1,5 @@
 LATEX = pdflatex
-TARGET = poster-ej
+TARGET = ej
 
 all: $(TARGET).tex 
 	$(LATEX) $<

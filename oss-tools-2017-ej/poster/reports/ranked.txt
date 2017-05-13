@@ -1,0 +1,17 @@
+[broadsheetfb.c:673]: Memory leak: sector_buffer
+[cyber2000fb.c:1962]: Uninitialized variable: err
+[ucon.c:250]: Resource leak: out
+[mmp_pdma.c:461]: Possible null pointer dereference: prev
+[osf_sys.c:1182]: Uninitialized variable: r
+[mkpiggy.c:61]: Resource leak: f
+[bssdb.c:630]: Division by zero.
+[sm501fb.c:1768]: Possible null pointer dereference: pd
+[ev-layer.c:475]: Array index -1 is out of bounds.
+[ftrace.c:167]: Boolean value assigned to pointer.
+[ftrace.c:4169]: Boolean value assigned to pointer.
+[init301.c:5717]: Division by zero.
+[mxser.c:2225]: Possible null pointer dereference: brd
+[sigp.c:240]: Possible null pointer dereference: li
+[timer.c:206]: Memory leak: ttccs
+[ftrace.c:4137]: Boolean value assigned to pointer.
+[sleep.h:84]: syntax error

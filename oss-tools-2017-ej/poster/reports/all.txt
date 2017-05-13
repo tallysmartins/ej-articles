@@ -1,0 +1,819 @@
+[linux-v3.9/Documentation/connector/ucon.c:250]: (error) Resource leak: out
+[linux-v3.9/Documentation/laptops/hpfall.c:33]: (error) Dangerous usage of 'devname' (strncpy doesn't always null-terminate it).
+[linux-v3.9/arch/alpha/kernel/osf_sys.c:1182]: (error) Uninitialized variable: r
+[linux-v3.9/arch/arc/mm/cache_arc700.c:150]: (error) Uninitialized variable: way_pg_ratio
+[linux-v3.9/arch/arc/mm/cache_arc700.c:270]: (error) Uninitialized variable: tmp
+[linux-v3.9/arch/arc/mm/cache_arc700.c:348]: (error) Uninitialized variable: tmp
+[linux-v3.9/arch/arm/mach-davinci/board-da850-evm.c:455]: (error) Array 'da850_evm_ui_exp[11]' accessed at index 15, which is out of bounds.
+[linux-v3.9/arch/arm/mach-davinci/board-da850-evm.c:452]: (error) Array 'da850_evm_ui_keys[1]' accessed at index 7, which is out of bounds.
+[linux-v3.9/arch/arm/mach-davinci/board-da850-evm.c:635]: (error) Array 'da850_evm_bb_keys[2]' accessed at index 8, which is out of bounds.
+[linux-v3.9/arch/arm/mach-omap2/cclock33xx_data.c:938]: (error) Uninitialized variable: cpu_clkflg
+[linux-v3.9/arch/arm/mach-tegra/sleep.h:84]: (error) syntax error
+[linux-v3.9/arch/arm/mach-zynq/timer.c:206]: (error) Memory leak: ttccs
+[linux-v3.9/arch/arm/mach-zynq/timer.c:248]: (error) Memory leak: ttcce
+[linux-v3.9/arch/avr32/boards/atngw100/mrmt.c:154]: (error) Invalid number of character ({) when these macros are defined: 'CONFIG_BOARD_MRMT_UCB1400_TS'.
+[linux-v3.9/arch/blackfin/kernel/trace.c:853]: (error) Uninitialized variable: in_atomic
+[linux-v3.9/arch/cris/arch-v32/kernel/irq.c:383] -> [linux-v3.9/arch/cris/arch-v32/kernel/irq.c:387]: (warning) Array 'masked[1]' accessed at index 1, which is out of bounds. Otherwise condition 'i==1' is redundant.
+[linux-v3.9/arch/cris/arch-v32/kernel/irq.c:398] -> [linux-v3.9/arch/cris/arch-v32/kernel/irq.c:398]: (warning) Array 'masked[1]' accessed at index 1, which is out of bounds. Otherwise condition 'i==1' is redundant.
+[linux-v3.9/arch/cris/arch-v32/kernel/irq.c:399] -> [linux-v3.9/arch/cris/arch-v32/kernel/irq.c:398]: (warning) Array 'masked[1]' accessed at index 1, which is out of bounds. Otherwise condition 'i==1' is redundant.
+[linux-v3.9/arch/cris/arch-v32/drivers/cryptocop.c:1848]: (error) Memory leak: pj
+[linux-v3.9/arch/cris/arch-v32/drivers/sync_serial.c:285]: (error) Array 'ports[1]' accessed at index 1, which is out of bounds.
+[linux-v3.9/arch/frv/kernel/time.c:93]: (error) Uninitialized variable: year
+[linux-v3.9/arch/frv/kernel/time.c:93]: (error) Uninitialized variable: mon
+[linux-v3.9/arch/frv/kernel/time.c:93]: (error) Uninitialized variable: day
+[linux-v3.9/arch/frv/kernel/time.c:93]: (error) Uninitialized variable: hour
+[linux-v3.9/arch/frv/kernel/time.c:93]: (error) Uninitialized variable: min
+[linux-v3.9/arch/frv/kernel/time.c:93]: (error) Uninitialized variable: sec
+[linux-v3.9/arch/ia64/hp/common/sba_iommu.c:649]: (error) Possible null pointer dereference: ioc
+[linux-v3.9/arch/ia64/hp/common/sba_iommu.c:956]: (error) Possible null pointer dereference: ioc
+[linux-v3.9/arch/ia64/hp/common/sba_iommu.c:982]: (error) Possible null pointer dereference: ioc
+[linux-v3.9/arch/ia64/hp/common/sba_iommu.c:1003]: (error) Possible null pointer dereference: ioc
+[linux-v3.9/arch/ia64/hp/common/sba_iommu.c:1179]: (error) Possible null pointer dereference: ioc
+[linux-v3.9/arch/ia64/hp/common/sba_iommu.c:1502]: (error) Possible null pointer dereference: ioc
+[linux-v3.9/arch/ia64/hp/common/sba_iommu.c:2085]: (error) Memory leak: ioc
+[linux-v3.9/arch/ia64/hp/common/sba_iommu.c:1144]: (error) Possible null pointer dereference: ioc
+[linux-v3.9/arch/ia64/kernel/palinfo.c:133]: (error) Array 'units[5]' accessed at index 6, which is out of bounds.
+[linux-v3.9/arch/ia64/sn/kernel/sn2/sn_hwperf.c:280]: (error) Possible null pointer dereference: nodeobj
+[linux-v3.9/arch/ia64/sn/pci/tioce_provider.c:1042]: (error) Memory leak: tioce_kern
+[linux-v3.9/arch/m32r/kernel/ptrace.c:116]: (error) Possible null pointer dereference: dummy
+[linux-v3.9/arch/m68k/mm/kmap.c:223]: (error) Memory leak: area
+[linux-v3.9/arch/microblaze/kernel/setup.c:180]: (error) Invalid number of character (() when these macros are defined: ''.
+[linux-v3.9/arch/microblaze/kernel/setup.c:180]: (error) Invalid number of character (() when these macros are defined: 'CONFIG_CRAMFS;CONFIG_MTD_UCLINUX'.
+[linux-v3.9/arch/microblaze/kernel/setup.c:180]: (error) Invalid number of character (() when these macros are defined: 'CONFIG_DEBUG_FS'.
+[linux-v3.9/arch/microblaze/kernel/setup.c:180]: (error) Invalid number of character (() when these macros are defined: 'CONFIG_DEBUG_FS;CONFIG_MMU'.
+[linux-v3.9/arch/microblaze/kernel/setup.c:180]: (error) Invalid number of character (() when these macros are defined: 'CONFIG_DUMMY_CONSOLE;CONFIG_VT'.
+[linux-v3.9/arch/microblaze/kernel/setup.c:180]: (error) Invalid number of character (() when these macros are defined: 'CONFIG_EARLY_PRINTK'.
+[linux-v3.9/arch/microblaze/kernel/setup.c:180]: (error) Invalid number of character (() when these macros are defined: 'CONFIG_MTD_UCLINUX'.
+[linux-v3.9/arch/microblaze/kernel/setup.c:180]: (error) Invalid number of character (() when these macros are defined: 'CONFIG_MTD_UCLINUX;CONFIG_ROMFS_FS'.
+[linux-v3.9/arch/microblaze/kernel/setup.c:180]: (error) Invalid number of character (() when these macros are defined: 'CONFIG_VT'.
+[linux-v3.9/arch/microblaze/kernel/setup.c:180]: (error) Invalid number of character (() when these macros are defined: 'CONFIG_VT;CONFIG_XILINX_CONSOLE'.
+[linux-v3.9/arch/mips/bcm47xx/sprom.c:165]: (warning) Using 'sizeof' on array given as function argument returns size of a pointer.
+[linux-v3.9/arch/mips/kernel/signal.c:134]: (error) Uninitialized variable: used_math
+[linux-v3.9/arch/mips/kernel/signal32.c:148]: (error) Uninitialized variable: used_math
+[linux-v3.9/arch/mips/ralink/prom.c:64]: (error) Uninitialized variable: argc
+[linux-v3.9/arch/mn10300/boot/tools/build.c:54]: (error) va_list 'args' was opened but not closed by va_end().
+[linux-v3.9/arch/mn10300/kernel/process.c:110]: (error) Uninitialized variable: idle
+[linux-v3.9/arch/mn10300/kernel/ptrace.c:268]: (error) Possible null pointer dereference: dummy
+[linux-v3.9/arch/mn10300/kernel/ptrace.c:270]: (error) Possible null pointer dereference: dummy
+[linux-v3.9/arch/mn10300/kernel/ptrace.c:283]: (error) Possible null pointer dereference: dummy
+[linux-v3.9/arch/mn10300/kernel/ptrace.c:285]: (error) Possible null pointer dereference: dummy
+[linux-v3.9/arch/powerpc/kernel/prom_init.c:391]: (error) va_list 'args' was opened but not closed by va_end().
+[linux-v3.9/arch/powerpc/perf/power4-pmu.c:506]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/arch/powerpc/perf/ppc970-pmu.c:380]: (error) Array 'pmcsel[8]' accessed at index 8, which is out of bounds.
+[linux-v3.9/arch/powerpc/platforms/cell/cbe_thermal.c:132]: (warning) %u in format string (no. 1) requires 'unsigned int *' but the argument type is 'int *'.
+[linux-v3.9/arch/powerpc/platforms/powermac/low_i2c.c:1387]: (error) Array 'inst.buffer[64]' accessed at index 9998, which is out of bounds.
+[linux-v3.9/arch/powerpc/platforms/powermac/bootx_init.c:87]: (error) va_list 'args' was opened but not closed by va_end().
+[linux-v3.9/arch/s390/kernel/ipl.c:762]: (warning) %lld in format string (no. 1) requires 'long long *' but the argument type is 'unsigned long long *'.
+[linux-v3.9/arch/s390/kernel/ipl.c:764]: (warning) %lld in format string (no. 1) requires 'long long *' but the argument type is 'unsigned long long *'.
+[linux-v3.9/arch/s390/kernel/ipl.c:1331]: (warning) %lld in format string (no. 1) requires 'long long *' but the argument type is 'unsigned long long *'.
+[linux-v3.9/arch/s390/kernel/ipl.c:1333]: (warning) %lld in format string (no. 1) requires 'long long *' but the argument type is 'unsigned long long *'.
+[linux-v3.9/arch/s390/kernel/ptrace.c:188]: (error) Possible null pointer dereference: dummy
+[linux-v3.9/arch/s390/kernel/ptrace.c:193]: (error) Possible null pointer dereference: dummy
+[linux-v3.9/arch/s390/kernel/ptrace.c:197]: (error) Possible null pointer dereference: dummy
+[linux-v3.9/arch/s390/kernel/ptrace.c:201]: (error) Possible null pointer dereference: dummy
+[linux-v3.9/arch/s390/kernel/ptrace.c:214]: (error) Possible null pointer dereference: dummy
+[linux-v3.9/arch/s390/kernel/ptrace.c:220]: (error) Possible null pointer dereference: dummy
+[linux-v3.9/arch/s390/kernel/ptrace.c:227]: (error) Possible null pointer dereference: dummy
+[linux-v3.9/arch/s390/kernel/ptrace.c:231]: (error) Possible null pointer dereference: dummy
+[linux-v3.9/arch/s390/kernel/ptrace.c:233]: (error) Possible null pointer dereference: dummy
+[linux-v3.9/arch/s390/kernel/ptrace.c:237]: (error) Possible null pointer dereference: dummy
+[linux-v3.9/arch/s390/kernel/ptrace.c:241]: (error) Possible null pointer dereference: dummy
+[linux-v3.9/arch/s390/kernel/ptrace.c:91]: (error) Memory leak: new.control
+[linux-v3.9/arch/s390/kernel/ptrace.c:208]: (error) Possible null pointer dereference: dummy
+[linux-v3.9/arch/s390/kernel/ptrace.c:524]: (error) Possible null pointer dereference: dummy32
+[linux-v3.9/arch/s390/kernel/ptrace.c:529]: (error) Possible null pointer dereference: dummy32
+[linux-v3.9/arch/s390/kernel/ptrace.c:533]: (error) Possible null pointer dereference: dummy32
+[linux-v3.9/arch/s390/kernel/ptrace.c:541]: (error) Possible null pointer dereference: dummy32
+[linux-v3.9/arch/s390/kernel/ptrace.c:545]: (error) Possible null pointer dereference: dummy32
+[linux-v3.9/arch/s390/kernel/ptrace.c:548]: (error) Possible null pointer dereference: dummy32
+[linux-v3.9/arch/s390/kernel/ptrace.c:554]: (error) Possible null pointer dereference: dummy32
+[linux-v3.9/arch/s390/kernel/ptrace.c:561]: (error) Possible null pointer dereference: dummy32
+[linux-v3.9/arch/s390/kernel/ptrace.c:565]: (error) Possible null pointer dereference: dummy32
+[linux-v3.9/arch/s390/kernel/ptrace.c:568]: (error) Possible null pointer dereference: dummy32
+[linux-v3.9/arch/s390/kernel/ptrace.c:572]: (error) Possible null pointer dereference: dummy32
+[linux-v3.9/arch/s390/kvm/sigp.c:240]: (error) Possible null pointer dereference: li
+[linux-v3.9/arch/sh/drivers/push-switch.c:27]: (error) syntax error
+[linux-v3.9/arch/sparc/kernel/pcic.c:694]: (error) Uninitialized variable: irq
+[linux-v3.9/arch/sparc/kernel/starfire.c:106]: (error) Array 'p.imap_slots[32]' accessed at index 32, which is out of bounds.
+[linux-v3.9/arch/sparc/kernel/starfire.c:113]: (error) Array 'p.tregs[32]' accessed at index 32, which is out of bounds.
+[linux-v3.9/arch/sparc/kernel/sysfs.c:154]: (warning) %ld in format string (no. 1) requires 'long *' but the argument type is 'unsigned long *'.
+[linux-v3.9/arch/um/drivers/net_user.c:258]: (error) va_list 'ap' was opened but not closed by va_end().
+[linux-v3.9/arch/x86/boot/compressed/mkpiggy.c:61]: (error) Resource leak: f
+[linux-v3.9/arch/x86/boot/tools/build.c:259]: (error) Resource leak: file
+[linux-v3.9/arch/x86/boot/tools/build.c:135]: (error) va_list 'args' was opened but not closed by va_end().
+[linux-v3.9/arch/x86/kernel/cpu/perf_event_intel_uncore.c:2458]: (error) Array 'attr_groups[2]' accessed at index 2, which is out of bounds.
+[linux-v3.9/arch/x86/kernel/cpu/perf_event_intel_uncore.c:2459]: (error) Array 'attr_groups[2]' accessed at index 2, which is out of bounds.
+[linux-v3.9/arch/x86/kernel/cpu/perf_event_intel_uncore.c:2460]: (error) Array 'attr_groups[2]' accessed at index 2, which is out of bounds.
+[linux-v3.9/arch/x86/kernel/cpu/perf_event_intel_uncore.c:2463]: (error) Array 'attr_groups[2]' accessed at index 2, which is out of bounds.
+[linux-v3.9/arch/x86/kernel/cpu/perf_event_intel_uncore.c:2464]: (error) Array 'attr_groups[2]' accessed at index 2, which is out of bounds.
+[linux-v3.9/arch/x86/kernel/cpu/perf_event_intel_uncore.c:2465]: (error) Array 'attr_groups[2]' accessed at index 2, which is out of bounds.
+[linux-v3.9/arch/x86/kernel/cpu/perf_event_intel_uncore.c:2470]: (error) Array 'attr_groups[2]' accessed at index 2, which is out of bounds.
+[linux-v3.9/arch/x86/kernel/machine_kexec_32.c:115]: (error) Possible null pointer dereference: pmd
+[linux-v3.9/arch/x86/kvm/x86.c:5374]: (error) Uninitialized variable: param
+[linux-v3.9/arch/x86/kvm/x86.c:5375]: (error) Uninitialized variable: param
+[linux-v3.9/arch/x86/kvm/x86.c:5376]: (error) Uninitialized variable: param
+[linux-v3.9/arch/x86/kvm/x86.c:5377]: (error) Uninitialized variable: param
+[linux-v3.9/arch/x86/math-emu/poly_2xm1.c:127]: (error) Uninitialized struct member: Denom.msw
+[linux-v3.9/arch/x86/math-emu/poly_2xm1.c:73]: (error) Uninitialized struct member: argSignif.msw
+[linux-v3.9/arch/x86/math-emu/poly_atan.c:92]: (error) Uninitialized variable: argSignif
+[linux-v3.9/arch/x86/math-emu/poly_l2.c:205]: (error) Uninitialized struct member: Numer.msw
+[linux-v3.9/arch/x86/math-emu/poly_l2.c:194]: (error) Uninitialized variable: argSignif
+[linux-v3.9/arch/x86/math-emu/poly_l2.c:199]: (error) Uninitialized variable: argSignif
+[linux-v3.9/arch/x86/math-emu/poly_l2.c:218]: (error) Uninitialized struct member: argSignif.lsw
+[linux-v3.9/arch/x86/math-emu/poly_l2.c:219]: (error) Uninitialized struct member: argSignif.midw
+[linux-v3.9/arch/x86/math-emu/poly_tan.c:108]: (error) Uninitialized struct member: accum.lsw
+[linux-v3.9/arch/x86/math-emu/poly_tan.c:186]: (error) Uninitialized struct member: fix_up.msw
+[linux-v3.9/arch/x86/math-emu/poly_l2.c:212]: (error) Uninitialized struct member: argSignif.msw
+[linux-v3.9/arch/x86/math-emu/poly_sin.c:352]: (error) Uninitialized struct member: fix_up.msw
+[linux-v3.9/arch/xtensa/platforms/iss/network.c:115]: (error) va_list 'ap' was opened but not closed by va_end().
+[linux-v3.9/drivers/acpi/battery.c:580]: (warning) %ld in format string (no. 1) requires 'long *' but the argument type is 'unsigned long *'.
+[linux-v3.9/drivers/acpi/sbs.c:470]: (warning) %ld in format string (no. 1) requires 'long *' but the argument type is 'unsigned long *'.
+[linux-v3.9/drivers/ata/sata_fsl.c:333]: (warning) %d in format string (no. 1) requires 'int *' but the argument type is 'unsigned int *'.
+[linux-v3.9/drivers/ata/sata_fsl.c:333]: (warning) %d in format string (no. 2) requires 'int *' but the argument type is 'unsigned int *'.
+[linux-v3.9/drivers/atm/fore200e.c:2802]: (error) Uninitialized variable: err
+[linux-v3.9/drivers/char/tile-srom.c:156]: (error) Uninitialized variable: dummy
+[linux-v3.9/drivers/crypto/bfin_crc.c:154]: (error) Uninitialized variable: crc
+[linux-v3.9/drivers/crypto/caam/caamhash.c:822]: (error) Uninitialized variable: desc
+[linux-v3.9/drivers/crypto/nx/nx-842.c:1030]: (error) Possible null pointer dereference: node
+[linux-v3.9/drivers/dma/mmp_pdma.c:461]: (error) Possible null pointer dereference: prev
+[linux-v3.9/drivers/dma/mmp_tdma.c:186]: (error) Uninitialized variable: tdcr
+[linux-v3.9/drivers/dma/mmp_tdma.c:227]: (error) Uninitialized variable: tdcr
+[linux-v3.9/drivers/edac/i7core_edac.c:1427]: (error) Memory leak: i7core_dev
+[linux-v3.9/drivers/edac/sb_edac.c:1192]: (error) Memory leak: sbridge_dev
+[linux-v3.9/drivers/gpu/drm/drm_ioc32.c:359]: (error) Uninitialized variable: s32
+[linux-v3.9/drivers/gpu/drm/gma500/mdfld_dsi_pkg_sender.c:219]: (error) Array 'dsi_errors[31]' accessed at index 31, which is out of bounds.
+[linux-v3.9/drivers/gpu/drm/i915/i915_gem.c:997]: (error) Possible null pointer dereference: ring
+[linux-v3.9/drivers/gpu/drm/i915/i915_irq.c:2289]: (error) Uninitialized variable: pipe
+[linux-v3.9/drivers/gpu/drm/i915/i915_irq.c:1360]: (error) Uninitialized variable: pipe
+[linux-v3.9/drivers/gpu/drm/i915/intel_ddi.c:1192]: (error) Uninitialized variable: pipe
+[linux-v3.9/drivers/gpu/drm/i915/intel_ddi.c:903]: (error) Uninitialized variable: reg
+[linux-v3.9/drivers/gpu/drm/i915/intel_ddi.c:913]: (error) Uninitialized variable: reg
+[linux-v3.9/drivers/gpu/drm/i915/intel_ddi.c:1198]: (error) Uninitialized variable: pipe
+[linux-v3.9/drivers/gpu/drm/i915/intel_pm.c:3758]: (error) Uninitialized variable: pipe
+[linux-v3.9/drivers/gpu/drm/i915/intel_pm.c:3964]: (error) Uninitialized variable: pipe
+[linux-v3.9/drivers/gpu/drm/omapdrm/omap_dmm_tiler.c:186]: (error) Possible null pointer dereference: engine
+[linux-v3.9/drivers/gpu/drm/omapdrm/omap_dmm_tiler.c:189]: (error) Possible null pointer dereference: engine
+[linux-v3.9/drivers/gpu/drm/omapdrm/omap_dmm_tiler.c:190]: (error) Possible null pointer dereference: engine
+[linux-v3.9/drivers/gpu/drm/radeon/radeon_atombios.c:2672]: (error) Uninitialized variable: args
+[linux-v3.9/drivers/gpu/drm/radeon/radeon_atombios.c:2681]: (error) Uninitialized variable: args
+[linux-v3.9/drivers/gpu/drm/ttm/ttm_agp_backend.c:129]: (error) Memory leak: agp_be
+[linux-v3.9/drivers/hid/hid-wiimote-debug.c:146]: (error) Array 'wiidebug_drmmap[13]' accessed at index 63, which is out of bounds.
+[linux-v3.9/drivers/i2c/i2c-core.c:739]: (warning) %hi in format string (no. 1) requires 'short *' but the argument type is 'unsigned short *'.
+[linux-v3.9/drivers/iio/industrialio-core.c:199]: (warning) %i in format string (no. 1) requires 'int *' but the argument type is 'unsigned int *'.
+[linux-v3.9/drivers/iio/industrialio-core.c:199]: (warning) %i in format string (no. 2) requires 'int *' but the argument type is 'unsigned int *'.
+[linux-v3.9/drivers/infiniband/hw/cxgb3/iwch_provider.c:1142]: (warning) %i in format string (no. 1) requires 'int *' but the argument type is 'unsigned int *'.
+[linux-v3.9/drivers/infiniband/hw/cxgb3/iwch_provider.c:1144]: (warning) %i in format string (no. 1) requires 'int *' but the argument type is 'unsigned int *'.
+[linux-v3.9/drivers/infiniband/hw/cxgb3/iwch_provider.c:1146]: (warning) %i in format string (no. 1) requires 'int *' but the argument type is 'unsigned int *'.
+[linux-v3.9/drivers/infiniband/hw/cxgb3/iwch_provider.c:594]: (error) Uninitialized variable: npages
+[linux-v3.9/drivers/infiniband/hw/cxgb4/mem.c:405]: (error) Memory leak: page_list
+[linux-v3.9/drivers/infiniband/hw/ipath/ipath_diag.c:366]: (error) Uninitialized struct member: dp.unit
+[linux-v3.9/drivers/infiniband/hw/mlx4/main.c:1173]: (error) Uninitialized variable: iboe
+[linux-v3.9/drivers/input/keyboard/omap-keypad.c:207]: (warning) %u in format string (no. 1) requires 'unsigned int *' but the argument type is 'int *'.
+[linux-v3.9/drivers/input/touchscreen/ad7879-spi.c:37]: (error) Uninitialized variable: _rx_buf
+[linux-v3.9/drivers/iommu/amd_iommu.c:1816] -> [linux-v3.9/drivers/iommu/amd_iommu.c:1818]: (warning) Array 'dom.aperture[32]' accessed at index 32, which is out of bounds. Otherwise condition 'i>=32' is redundant.
+[linux-v3.9/drivers/iommu/amd_iommu.c:452]: (error) Memory leak: dev_data
+[linux-v3.9/drivers/iommu/dmar.c:1005]: (error) Uninitialized variable: sts
+[linux-v3.9/drivers/iommu/intel_irq_remapping.c:419]: (error) Uninitialized variable: sts
+[linux-v3.9/drivers/iommu/intel-iommu.c:983]: (error) Uninitialized variable: sts
+[linux-v3.9/drivers/iommu/intel-iommu.c:1001]: (error) Uninitialized variable: val
+[linux-v3.9/drivers/iommu/intel-iommu.c:1225]: (error) Uninitialized variable: sts
+[linux-v3.9/drivers/iommu/intel-iommu.c:1242]: (error) Uninitialized variable: sts
+[linux-v3.9/drivers/iommu/omap-iommu.c:669]: (error) Possible null pointer dereference: fn
+[linux-v3.9/drivers/isdn/gigaset/ev-layer.c:475]: (error) Array index -1 is out of bounds.
+[linux-v3.9/drivers/isdn/i4l/isdn_ttyfax.c:329]: (error) Uninitialized variable: c
+[linux-v3.9/drivers/isdn/icn/icn.c:1579]: (error) Memory leak: card
+[linux-v3.9/drivers/isdn/isdnloop/isdnloop.c:1490]: (error) Memory leak: card
+[linux-v3.9/drivers/isdn/mISDN/dsp_cmx.c:1623]: (error) Invalid number of character ({) when these macros are defined: 'DSP_NEVER_DEFINED'.
+[linux-v3.9/drivers/lguest/lguest_device.c:469]: (error) Memory leak: ldev
+[linux-v3.9/drivers/macintosh/windfarm_pm121.c:539]: (error) Possible null pointer dereference: param
+[linux-v3.9/drivers/macintosh/windfarm_pm121.c:552]: (error) Possible null pointer dereference: param
+[linux-v3.9/drivers/macintosh/windfarm_pm121.c:556]: (error) Possible null pointer dereference: param
+[linux-v3.9/drivers/macintosh/windfarm_pm81.c:293]: (error) Possible null pointer dereference: param
+[linux-v3.9/drivers/macintosh/windfarm_pm81.c:294]: (error) Possible null pointer dereference: param
+[linux-v3.9/drivers/macintosh/windfarm_pm81.c:295]: (error) Possible null pointer dereference: param
+[linux-v3.9/drivers/macintosh/windfarm_pm81.c:296]: (error) Possible null pointer dereference: param
+[linux-v3.9/drivers/macintosh/windfarm_pm81.c:299]: (error) Possible null pointer dereference: param
+[linux-v3.9/drivers/macintosh/windfarm_pm81.c:300]: (error) Possible null pointer dereference: param
+[linux-v3.9/drivers/macintosh/windfarm_pm81.c:301]: (error) Possible null pointer dereference: param
+[linux-v3.9/drivers/macintosh/windfarm_pm81.c:304]: (error) Possible null pointer dereference: param
+[linux-v3.9/drivers/md/dm-mpath.c:1590]: (error) Possible null pointer dereference: bdev
+[linux-v3.9/drivers/md/dm-thin-metadata.c:988]: (error) Memory leak: td
+[linux-v3.9/drivers/md/dm-thin-metadata.c:1021]: (error) Memory leak: td
+[linux-v3.9/drivers/md/dm-thin-metadata.c:1103]: (error) Memory leak: td
+[linux-v3.9/drivers/md/dm-verity.c:698]: (warning) %d in format string (no. 1) requires 'int *' but the argument type is 'unsigned int *'.
+[linux-v3.9/drivers/media/dvb-frontends/dib9000.c:1047]: (error) Array 'mb[10]' accessed at index 10, which is out of bounds.
+[linux-v3.9/drivers/media/dvb-frontends/ds3000.c:619]: (error) Array 'dvbs2_snr_tab[80]' accessed at index 80, which is out of bounds.
+[linux-v3.9/drivers/media/dvb-frontends/stv0367.c:926]: (error) Possible null pointer dereference: tuner_ops
+[linux-v3.9/drivers/media/i2c/ir-kbd-i2c.c:219]: (error) Uninitialized variable: key
+[linux-v3.9/drivers/media/i2c/ov9650.c:710]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/media/i2c/ov9650.c:711]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/media/pci/saa7134/saa7134-input.c:136]: (error) Uninitialized variable: b
+[linux-v3.9/drivers/media/usb/dvb-usb-v2/mxl111sf.c:145]: (error) Uninitialized variable: val
+[linux-v3.9/drivers/media/usb/gspca/gspca.c:1768]: (error) Possible null pointer dereference: frame
+[linux-v3.9/drivers/mfd/pm8921-core.c:178]: (error) Possible null pointer dereference: pmic
+[linux-v3.9/drivers/mfd/tps65911-comparator.c:61]: (error) Array 'tps_comparators[2]' accessed at index 2, which is out of bounds.
+[linux-v3.9/drivers/mfd/tps65911-comparator.c:88]: (error) Array 'tps_comparators[2]' accessed at index 2, which is out of bounds.
+[linux-v3.9/drivers/misc/fsa9480.c:254]: (error) syntax error
+[linux-v3.9/drivers/misc/lkdtm.c:330]: (error) Uninitialized variable: data
+[linux-v3.9/drivers/misc/sgi-xp/xpc_partition.c:426]: (error) Memory leak: remote_rp_base
+[linux-v3.9/drivers/misc/sgi-xp/xpc_partition.c:73]: (error) Uninitialized variable: buf
+[linux-v3.9/drivers/misc/sgi-xp/xpc_sn2.c:2173]: (error) Uninitialized variable: msg
+[linux-v3.9/drivers/misc/sgi-xp/xpc_sn2.c:2174]: (error) Uninitialized variable: notify
+[linux-v3.9/drivers/mmc/host/sdhci-spear.c:93]: (error) Possible null pointer dereference: pdata
+[linux-v3.9/drivers/mtd/mtdblock.c:369]: (error) Memory leak: dev
+[linux-v3.9/drivers/mtd/redboot.c:216]: (error) Possible null pointer dereference: fl
+[linux-v3.9/drivers/mtd/redboot.c:246]: (error) Possible null pointer dereference: fl
+[linux-v3.9/drivers/mtd/redboot.c:248]: (error) Possible null pointer dereference: fl
+[linux-v3.9/drivers/mtd/ubi/eba.c:1282]: (error) Uninitialized variable: aeb
+[linux-v3.9/drivers/mtd/ubi/eba.c:1365]: (error) Uninitialized variable: aeb
+[linux-v3.9/drivers/net/can/sja1000/peak_pci.c:690]: (error) Possible null pointer dereference: chan
+[linux-v3.9/drivers/net/can/usb/esd_usb2.c:773]: (error) Possible null pointer dereference: context
+[linux-v3.9/drivers/net/can/usb/esd_usb2.c:774]: (error) Possible null pointer dereference: context
+[linux-v3.9/drivers/net/can/usb/esd_usb2.c:775]: (error) Possible null pointer dereference: context
+[linux-v3.9/drivers/net/can/usb/kvaser_usb.c:1311]: (error) Possible null pointer dereference: context
+[linux-v3.9/drivers/net/can/usb/kvaser_usb.c:1312]: (error) Possible null pointer dereference: context
+[linux-v3.9/drivers/net/can/usb/kvaser_usb.c:1313]: (error) Possible null pointer dereference: context
+[linux-v3.9/drivers/net/can/usb/kvaser_usb.c:1315]: (error) Possible null pointer dereference: context
+[linux-v3.9/drivers/net/can/usb/usb_8dev.c:672]: (error) Possible null pointer dereference: context
+[linux-v3.9/drivers/net/can/usb/usb_8dev.c:673]: (error) Possible null pointer dereference: context
+[linux-v3.9/drivers/net/can/usb/usb_8dev.c:674]: (error) Possible null pointer dereference: context
+[linux-v3.9/drivers/net/ethernet/broadcom/bnx2x/bnx2x_stats.c:661]: (error) Memory leak: diff.hi
+[linux-v3.9/drivers/net/ethernet/broadcom/bnx2x/bnx2x_stats.c:661]: (error) Memory leak: diff.lo
+[linux-v3.9/drivers/net/ethernet/broadcom/bnx2x/bnx2x_stats.c:881]: (error) Memory leak: diff.hi
+[linux-v3.9/drivers/net/ethernet/broadcom/bnx2x/bnx2x_stats.c:881]: (error) Memory leak: diff.lo
+[linux-v3.9/drivers/net/ethernet/brocade/bna/bna_tx_rx.c:1868]: (error) Possible null pointer dereference: rx
+[linux-v3.9/drivers/net/ethernet/brocade/bna/bna_tx_rx.c:3315]: (error) Possible null pointer dereference: tx
+[linux-v3.9/drivers/net/ethernet/dec/tulip/de4x5.c:5011]: (error) Array 'lp.phy[8]' accessed at index 8, which is out of bounds.
+[linux-v3.9/drivers/net/ethernet/dec/tulip/de4x5.c:5012]: (error) Array 'lp.phy[8]' accessed at index 8, which is out of bounds.
+[linux-v3.9/drivers/net/ethernet/dec/tulip/de4x5.c:5013]: (error) Array 'lp.phy[8]' accessed at index 8, which is out of bounds.
+[linux-v3.9/drivers/net/ethernet/dec/tulip/de4x5.c:5014]: (error) Array 'lp.phy[8]' accessed at index 8, which is out of bounds.
+[linux-v3.9/drivers/net/ethernet/dec/tulip/de4x5.c:5015]: (error) Array 'lp.phy[8]' accessed at index 8, which is out of bounds.
+[linux-v3.9/drivers/net/ethernet/emulex/benet/be_cmds.c:1509]: (error) Uninitialized variable: status
+[linux-v3.9/drivers/net/ethernet/emulex/benet/be_cmds.c:332]: (error) Uninitialized variable: compl
+[linux-v3.9/drivers/net/ethernet/i825xx/sun3_82586.c:993]: (error) Array 'p.xmit_cmds[1]' accessed at index 1, which is out of bounds.
+[linux-v3.9/drivers/net/ethernet/intel/e1000/e1000_hw.c:5617]: (error) Uninitialized variable: phy_data
+[linux-v3.9/drivers/net/ethernet/intel/e1000/e1000_hw.c:5664]: (error) Uninitialized variable: phy_data
+[linux-v3.9/drivers/net/ethernet/marvell/mvneta.c:2761]: (error) Uninitialized variable: phy_addr
+[linux-v3.9/drivers/net/ethernet/mellanox/mlx4/cmd.c:1385]: (error) Possible null pointer dereference: cmd
+[linux-v3.9/drivers/net/ethernet/marvell/sky2.c:1173]: (error) Uninitialized variable: re
+[linux-v3.9/drivers/net/ethernet/qlogic/qlcnic/qlcnic_io.c:236]: (error) Memory leak: fil
+[linux-v3.9/drivers/net/ethernet/sfc/falcon_xmac.c:76]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/falcon_xmac.c:116]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/falcon_xmac.c:117]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/falcon_xmac.c:213]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/falcon_xmac.c:215]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/falcon.c:82]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/falcon.c:91]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/falcon.c:189]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/falcon.c:213]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/falcon.c:477]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/falcon.c:478]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/falcon.c:479]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/falcon.c:510]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/falcon.c:698]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/falcon.c:699]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/falcon.c:890]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/falcon.c:891]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/falcon.c:892]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/falcon.c:897]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/falcon.c:903]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/falcon.c:904]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/falcon.c:1284]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/falcon.c:1380]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/falcon.c:1381]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/falcon.c:1444]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/mcdi.c:158]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/mcdi.c:165]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/mcdi.c:166]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/mcdi.c:168]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/mcdi.c:523]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/mcdi.c:527]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/mcdi.c:528]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/mcdi.c:547]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/mcdi.c:564]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/mcdi.c:565]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/mcdi_mon.c:65]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/mcdi_mon.c:66]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/mcdi_mon.c:196]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/mcdi_mon.c:335]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/mcdi_mon.c:339]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/ptp.c:1274]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/ptp.c:1276]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/ptp.c:1278]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/ptp.c:1312]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/ptp.c:1326]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:689]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:865]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:874]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:883]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:909]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:910]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:911]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:912]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:914]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:916]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:918]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:919]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:920]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:922]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:923]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:1011]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:1012]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:1013]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:1014]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:1015]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:1038]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:1041]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:1089]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:1160]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:1262]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:1462]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:868]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:876]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/nic.c:1016]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/siena.c:291]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/siena_sriov.c:1389]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/siena_sriov.c:1390]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/siena_sriov.c:1490]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/sfc/siena_sriov.c:1385]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/ethernet/smsc/smc91x.c:558]: (error) Uninitialized variable: flags
+[linux-v3.9/drivers/net/ethernet/smsc/smc91x.c:775]: (error) Uninitialized variable: mii_reg
+[linux-v3.9/drivers/net/ethernet/smsc/smc91x.c:679]: (error) Uninitialized variable: __mask
+[linux-v3.9/drivers/net/ethernet/smsc/smc91x.c:805]: (error) Uninitialized variable: mii_reg
+[linux-v3.9/drivers/net/ethernet/smsc/smc91x.c:1250]: (error) Uninitialized variable: __mask
+[linux-v3.9/drivers/net/ethernet/smsc/smc91x.c:1280]: (error) Uninitialized variable: __mask
+[linux-v3.9/drivers/net/ethernet/smsc/smc91x.c:1286]: (error) Uninitialized variable: __mask
+[linux-v3.9/drivers/net/ethernet/smsc/smc91x.c:1289]: (error) Uninitialized variable: __mask
+[linux-v3.9/drivers/net/ethernet/smsc/smc91x.c:1871]: (error) Uninitialized variable: val
+[linux-v3.9/drivers/net/ethernet/smsc/smc91x.c:1937]: (error) Uninitialized variable: __v
+[linux-v3.9/drivers/net/fddi/skfp/ecm.c:500]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/team/team_mode_loadbalance.c:456]: (error) Uninitialized variable: stats
+[linux-v3.9/drivers/net/wireless/airo.c:7691]: (error) syntax error
+[linux-v3.9/drivers/net/wireless/ath/ath9k/eeprom.c:414]: (error) Array 'data_9287[idxL].pwrPdg[4][1]' index data_9287[idxL].pwrPdg[0][4] out of bounds.
+[linux-v3.9/drivers/net/wireless/ath/ath9k/eeprom_def.c:539]: (error) Array 'eep.modalHeader[2]' accessed at index 128, which is out of bounds.
+[linux-v3.9/drivers/net/wireless/ath/ath9k/eeprom_def.c:713]: (error) Array 'eep.modalHeader[2]' accessed at index 128, which is out of bounds.
+[linux-v3.9/drivers/net/wireless/ath/ath9k/eeprom_def.c:1215]: (error) Array 'pEepData.modalHeader[2]' accessed at index 128, which is out of bounds.
+[linux-v3.9/drivers/net/wireless/ath/ath9k/hw.c:1275]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/wireless/ath/ath9k/hw.c:1277]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/net/wireless/b43/phy_lp.c:1857]: (error) Uninitialized variable: gains
+[linux-v3.9/drivers/net/wireless/b43/phy_lp.c:1859]: (error) Uninitialized variable: gains
+[linux-v3.9/drivers/net/wireless/b43/phy_lp.c:1857]: (error) Uninitialized struct member: gains.gm
+[linux-v3.9/drivers/net/wireless/b43/phy_lp.c:1859]: (error) Uninitialized struct member: gains.gm
+[linux-v3.9/drivers/net/wireless/b43/phy_lp.c:1857]: (error) Uninitialized struct member: gains.pga
+[linux-v3.9/drivers/net/wireless/b43/phy_lp.c:1859]: (error) Uninitialized struct member: gains.pga
+[linux-v3.9/drivers/net/wireless/b43/phy_lp.c:1857]: (error) Uninitialized struct member: gains.pad
+[linux-v3.9/drivers/net/wireless/b43/phy_lp.c:1859]: (error) Uninitialized struct member: gains.pad
+[linux-v3.9/drivers/net/wireless/b43/phy_lp.c:1857]: (error) Uninitialized struct member: gains.dac
+[linux-v3.9/drivers/net/wireless/b43/phy_lp.c:1859]: (error) Uninitialized struct member: gains.dac
+[linux-v3.9/drivers/net/wireless/brcm80211/brcmfmac/bcmsdh_sdmmc.c:134]: (error) Uninitialized variable: err_ret
+[linux-v3.9/drivers/net/wireless/brcm80211/brcmfmac/dhd_sdio.c:1455]: (error) Possible null pointer dereference: buf
+[linux-v3.9/drivers/net/wireless/hostap/hostap_ap.c:3158]: (error) Memory leak: sta
+[linux-v3.9/drivers/net/wireless/hostap/hostap_hw.c:2335]: (error) Memory leak: payload
+[linux-v3.9/drivers/net/wireless/ipw2x00/libipw_module.c:271]: (warning) %li in format string (no. 1) requires 'long *' but the argument type is 'unsigned long *'.
+[linux-v3.9/drivers/net/wireless/iwlwifi/iwl-phy-db.c:176] -> [linux-v3.9/drivers/net/wireless/iwlwifi/iwl-phy-db.c:178]: (warning) Array 'phy_db.calib_ch_group_papd[4]' accessed at index 9, which is out of bounds. Otherwise condition 'chg_id>=9' is redundant.
+[linux-v3.9/drivers/net/wireless/libertas/cmd.c:1129]: (error) Uninitialized struct member: cmd.control
+[linux-v3.9/drivers/net/wireless/libertas/cmd.c:1131]: (error) Uninitialized struct member: cmd.control
+[linux-v3.9/drivers/net/wireless/rt2x00/rt2x00mac.c:798]: (error) Uninitialized struct member: setup.rx_chain_num
+[linux-v3.9/drivers/net/wireless/rt2x00/rt2x00mac.c:798]: (error) Uninitialized struct member: setup.tx_chain_num
+[linux-v3.9/drivers/net/wireless/rtlwifi/rtl8192de/hw.c:566]: (error) Uninitialized variable: txpktbuf_bndy
+[linux-v3.9/drivers/net/wireless/rtlwifi/rtl8192de/hw.c:570]: (error) Uninitialized variable: txpktbuf_bndy
+[linux-v3.9/drivers/net/wireless/rtlwifi/rtl8192de/hw.c:574]: (error) Uninitialized variable: txpktbuf_bndy
+[linux-v3.9/drivers/net/wireless/rtlwifi/rtl8192de/hw.c:575]: (error) Uninitialized variable: txpktbuf_bndy
+[linux-v3.9/drivers/net/wireless/rtlwifi/rtl8192de/hw.c:579]: (error) Uninitialized variable: txpktbuf_bndy
+[linux-v3.9/drivers/net/wireless/rtlwifi/rtl8192de/hw.c:591]: (error) Uninitialized variable: txpktbuf_bndy
+[linux-v3.9/drivers/net/wireless/rtlwifi/rtl8192de/hw.c:598]: (error) Uninitialized variable: txpktbuf_bndy
+[linux-v3.9/drivers/net/wireless/rtlwifi/rtl8192de/hw.c:560]: (error) Uninitialized variable: value32
+[linux-v3.9/drivers/net/wireless/rtlwifi/rtl8192de/hw.c:559]: (error) Uninitialized variable: value8
+[linux-v3.9/drivers/net/wireless/rtlwifi/rtl8192de/phy.c:217]: (error) Uninitialized variable: dbi_direct
+[linux-v3.9/drivers/net/wireless/rtlwifi/rtl8192se/rf.c:66]: (error) Uninitialized variable: pwrbase0
+[linux-v3.9/drivers/net/wireless/rtlwifi/rtl8192se/rf.c:67]: (error) Uninitialized variable: pwrbase0
+[linux-v3.9/drivers/net/wireless/ti/wl18xx/debugfs.c:118]: (error) Undefined behavior: Variable 'buf' is used as parameter and destination in s[n]printf().
+[linux-v3.9/drivers/net/wireless/ti/wl18xx/debugfs.c:142]: (error) Undefined behavior: Variable 'buf' is used as parameter and destination in s[n]printf().
+[linux-v3.9/drivers/net/wireless/ti/wl18xx/debugfs.c:144]: (error) Undefined behavior: Variable 'buf' is used as parameter and destination in s[n]printf().
+[linux-v3.9/drivers/net/wireless/ti/wl18xx/debugfs.c:165]: (error) Undefined behavior: Variable 'buf' is used as parameter and destination in s[n]printf().
+[linux-v3.9/drivers/net/wireless/ti/wlcore/boot.c:126]: (error) Undefined behavior: Variable 'min_fw_str' is used as parameter and destination in s[n]printf().
+[linux-v3.9/drivers/net/wireless/ti/wlcore/boot.c:129]: (error) Undefined behavior: Variable 'min_fw_str' is used as parameter and destination in s[n]printf().
+[linux-v3.9/drivers/pci/pcie/aer/aerdrv.c:334]: (error) Memory leak: rpc
+[linux-v3.9/drivers/pcmcia/ds.c:1132]: (error) Possible null pointer dereference: p_drv
+[linux-v3.9/drivers/pcmcia/ds.c:1185]: (error) Possible null pointer dereference: p_drv
+[linux-v3.9/drivers/platform/x86/thinkpad_acpi.c:4993]: (warning) %u in format string (no. 1) requires 'unsigned int *' but the argument type is 'int *'.
+[linux-v3.9/drivers/platform/x86/thinkpad_acpi.c:5485]: (warning) %u in format string (no. 1) requires 'unsigned int *' but the argument type is 'int *'.
+[linux-v3.9/drivers/pnp/card.c:179]: (error) Memory leak: dev_id
+[linux-v3.9/drivers/platform/x86/sony-laptop.c:795]: (error) Uninitialized variable: len
+[linux-v3.9/drivers/platform/x86/thinkpad_acpi.c:7051]: (warning) %u in format string (no. 1) requires 'unsigned int *' but the argument type is 'int *'.
+[linux-v3.9/drivers/rapidio/rio.c:577]: (error) Possible null pointer dereference: prev
+[linux-v3.9/drivers/s390/block/scm_blk.c:85]: (error) Memory leak: aobrq
+[linux-v3.9/drivers/s390/char/con3215.c:733]: (error) Array 'raw3215[1]' accessed at index 1, which is out of bounds.
+[linux-v3.9/drivers/s390/cio/css.c:283]: (error) Possible null pointer dereference: sch
+[linux-v3.9/drivers/s390/cio/css.c:284]: (error) Possible null pointer dereference: sch
+[linux-v3.9/drivers/s390/cio/css.c:285]: (error) Possible null pointer dereference: sch
+[linux-v3.9/drivers/s390/cio/css.c:286]: (error) Possible null pointer dereference: sch
+[linux-v3.9/drivers/s390/kvm/kvm_virtio.c:322]: (error) Memory leak: kdev
+[linux-v3.9/drivers/s390/net/ctcm_sysfs.c:46]: (warning) %u in format string (no. 1) requires 'unsigned int *' but the argument type is 'int *'.
+[linux-v3.9/drivers/s390/net/ctcm_sysfs.c:151]: (warning) %u in format string (no. 1) requires 'unsigned int *' but the argument type is 'int *'.
+[linux-v3.9/drivers/s390/net/lcs.c:1952]: (warning) %u in format string (no. 1) requires 'unsigned int *' but the argument type is 'int *'.
+[linux-v3.9/drivers/s390/net/lcs.c:2006]: (warning) %u in format string (no. 1) requires 'unsigned int *' but the argument type is 'int *'.
+[linux-v3.9/drivers/s390/net/qeth_l3_main.c:69]: (warning) %u in format string (no. 1) requires 'unsigned int *' but the argument type is 'int *'.
+[linux-v3.9/drivers/s390/net/qeth_l3_main.c:69]: (warning) %u in format string (no. 2) requires 'unsigned int *' but the argument type is 'int *'.
+[linux-v3.9/drivers/s390/net/qeth_l3_main.c:69]: (warning) %u in format string (no. 3) requires 'unsigned int *' but the argument type is 'int *'.
+[linux-v3.9/drivers/s390/net/qeth_l3_main.c:69]: (warning) %u in format string (no. 4) requires 'unsigned int *' but the argument type is 'int *'.
+[linux-v3.9/drivers/scsi/BusLogic.c:2086]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/scsi/aacraid/rx.c:503]: (error) Uninitialized variable: var
+[linux-v3.9/drivers/scsi/advansys.c:12067]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12070]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12071]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12072]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12073]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12074]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12075]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12076]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12077]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12078]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12079]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12080]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12082]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12084]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12086]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12088]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12089]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12093]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12094]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12095]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12097]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12099]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12100]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12101]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12102]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12103]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12104]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12105]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12106]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12107]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12108]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12110]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12112]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12114]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12116]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12121]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12122]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12123]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12125]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12127]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12128]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12129]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12130]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12131]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12132]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12133]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12134]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12135]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12136]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12138]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12140]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12142]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12144]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12184]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12187]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12248]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12250]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12252]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12254]: (error) Possible null pointer dereference: adv_dvc_varp
+[linux-v3.9/drivers/scsi/advansys.c:12012]: (error) Uninitialized variable: ret
+[linux-v3.9/drivers/scsi/aic7xxx/aicasm/aicasm_symbol.c:649]: (error) Possible null pointer dereference: tab_str
+[linux-v3.9/drivers/scsi/aic7xxx/aicasm/aicasm_symbol.c:649]: (error) Possible null pointer dereference: tab_str2
+[linux-v3.9/drivers/scsi/be2iscsi/be_cmds.c:403]: (error) Uninitialized variable: compl
+[linux-v3.9/drivers/scsi/bfa/bfad_im.c:1040]: (error) Dangerous usage of 'symname' (strncpy doesn't always null-terminate it).
+[linux-v3.9/drivers/scsi/device_handler/scsi_dh.c:417]: (error) Possible null pointer dereference: scsi_dh
+[linux-v3.9/drivers/scsi/eata_pio.c:959]: (error) Array 'reg_IRQ[16]' accessed at index 16, which is out of bounds.
+[linux-v3.9/drivers/scsi/lpfc/lpfc_bsg.c:2443]: (error) Possible null pointer dereference: ctreq
+[linux-v3.9/drivers/scsi/lpfc/lpfc_bsg.c:2445]: (error) Possible null pointer dereference: ctreq
+[linux-v3.9/drivers/scsi/lpfc/lpfc_bsg.c:2446]: (error) Possible null pointer dereference: ctreq
+[linux-v3.9/drivers/scsi/lpfc/lpfc_bsg.c:2447]: (error) Possible null pointer dereference: ctreq
+[linux-v3.9/drivers/scsi/lpfc/lpfc_bsg.c:2448]: (error) Possible null pointer dereference: ctreq
+[linux-v3.9/drivers/scsi/lpfc/lpfc_bsg.c:2449]: (error) Possible null pointer dereference: ctreq
+[linux-v3.9/drivers/scsi/lpfc/lpfc_bsg.c:2450]: (error) Possible null pointer dereference: ctreq
+[linux-v3.9/drivers/scsi/lpfc/lpfc_bsg.c:2990]: (error) Possible null pointer dereference: txbuffer
+[linux-v3.9/drivers/scsi/lpfc/lpfc_bsg.c:3050]: (error) Possible null pointer dereference: rsp
+[linux-v3.9/drivers/scsi/lpfc/lpfc_els.c:3404]: (error) Possible null pointer dereference: buf_ptr
+[linux-v3.9/drivers/scsi/lpfc/lpfc_init.c:1092]: (error) Possible null pointer dereference: buf_ptr
+[linux-v3.9/drivers/scsi/lpfc/lpfc_init.c:2994]: (error) Possible null pointer dereference: psb
+[linux-v3.9/drivers/scsi/lpfc/lpfc_init.c:2995]: (error) Possible null pointer dereference: psb
+[linux-v3.9/drivers/scsi/lpfc/lpfc_scsi.c:1184]: (error) Possible null pointer dereference: psb
+[linux-v3.9/drivers/scsi/lpfc/lpfc_sli.c:1126]: (error) Possible null pointer dereference: piocb
+[linux-v3.9/drivers/scsi/lpfc/lpfc_sli.c:1894]: (error) Possible null pointer dereference: hbq_buffer
+[linux-v3.9/drivers/scsi/lpfc/lpfc_sli.c:9003]: (error) Possible null pointer dereference: pmb
+[linux-v3.9/drivers/scsi/lpfc/lpfc_sli.c:9004]: (error) Possible null pointer dereference: pmb
+[linux-v3.9/drivers/scsi/lpfc/lpfc_sli.c:9145]: (error) Possible null pointer dereference: buf_ptr
+[linux-v3.9/drivers/scsi/lpfc/lpfc_sli.c:10940]: (error) Possible null pointer dereference: cq_event
+[linux-v3.9/drivers/scsi/lpfc/lpfc_sli.c:10969]: (error) Possible null pointer dereference: cq_event
+[linux-v3.9/drivers/scsi/lpfc/lpfc_sli.c:12059]: (error) Possible null pointer dereference: dmabuf
+[linux-v3.9/drivers/scsi/lpfc/lpfc_sli.c:16200]: (error) Possible null pointer dereference: mb
+[linux-v3.9/drivers/scsi/mpt2sas/mpt2sas_ctl.c:1058]: (error) Buffer is accessed out of bounds.
+[linux-v3.9/drivers/scsi/mpt2sas/mpt2sas_ctl.c:1059]: (error) Buffer is accessed out of bounds.
+[linux-v3.9/drivers/scsi/mpt3sas/mpt3sas_ctl.c:1051]: (error) Buffer is accessed out of bounds.
+[linux-v3.9/drivers/scsi/mpt3sas/mpt3sas_ctl.c:1052]: (error) Buffer is accessed out of bounds.
+[linux-v3.9/drivers/scsi/pcmcia/nsp_cs.c:300]: (error) Uninitialized struct member: tmp_sync.SyncRegister
+[linux-v3.9/drivers/scsi/pcmcia/nsp_cs.c:300]: (error) Uninitialized struct member: tmp_sync.AckWidth
+[linux-v3.9/drivers/scsi/qla2xxx/qla_attr.c:893]: (error) Undefined behavior: Variable 'buf' is used as parameter and destination in s[n]printf().
+[linux-v3.9/drivers/spi/spi-dw.c:672]: (error) Memory leak: chip
+[linux-v3.9/drivers/spi/spi-s3c24xx.c:335]: (error) Possible null pointer dereference: code
+[linux-v3.9/drivers/spi/spi-s3c24xx.c:338]: (error) Possible null pointer dereference: code
+[linux-v3.9/drivers/staging/bcm/CmHost.c:1294]: (error) Array 'psfCSType.cCPacketClassificationRule.u8IPv6FlowLable[3]' accessed at index 3, which is out of bounds.
+[linux-v3.9/drivers/staging/bcm/CmHost.c:1294]: (error) Array 'psfCSType.cCPacketClassificationRule.u8IPv6FlowLable[3]' accessed at index 4, which is out of bounds.
+[linux-v3.9/drivers/staging/bcm/CmHost.c:1294]: (error) Array 'psfCSType.cCPacketClassificationRule.u8IPv6FlowLable[3]' accessed at index 5, which is out of bounds.
+[linux-v3.9/drivers/staging/ccg/f_fs.c:1927]: (error) Memory leak: d
+[linux-v3.9/drivers/staging/ccg/rndis.c:599]: (error) Memory leak: r
+[linux-v3.9/drivers/staging/ccg/rndis.c:702]: (error) Memory leak: r
+[linux-v3.9/drivers/staging/ccg/rndis.c:725]: (error) Memory leak: r
+[linux-v3.9/drivers/staging/ccg/rndis.c:754]: (error) Memory leak: r
+[linux-v3.9/drivers/staging/ced1401/usb1401.c:1015] -> [linux-v3.9/drivers/staging/ced1401/usb1401.c:1004]: (warning) Array 'pdx.rTransDef[8]' accessed at index 8, which is out of bounds. Otherwise condition 'wIdent>=8' is redundant.
+[linux-v3.9/drivers/staging/ced1401/usb1401.c:1019] -> [linux-v3.9/drivers/staging/ced1401/usb1401.c:1004]: (warning) Array 'pdx.rTransDef[8]' accessed at index 8, which is out of bounds. Otherwise condition 'wIdent>=8' is redundant.
+[linux-v3.9/drivers/staging/ced1401/userspace/use1401.c:1579] -> [linux-v3.9/drivers/staging/ced1401/userspace/use1401.c:1587]: (warning) Array 'asLastRetCode[8]' accessed at index 8, which is out of bounds. Otherwise condition 'hand>=8' is redundant.
+[linux-v3.9/drivers/staging/comedi/drivers/ni_mio_common.c:5018]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/staging/csr/csr_wifi_hip_dump.c:598]: (error) Uninitialized variable: val
+[linux-v3.9/drivers/staging/cxt1e1/comet.c:415]: (error) Array 'table[24][5]' index table[24][0] out of bounds.
+[linux-v3.9/drivers/staging/iio/Documentation/iio_utils.h:322]: (warning) %u in format string (no. 1) requires 'unsigned int *' but the argument type is 'int *'.
+[linux-v3.9/drivers/staging/ozwpan/ozpd.c:179]: (error) Possible null pointer dereference: pd
+[linux-v3.9/drivers/staging/rtl8192e/rtl819x_BAProc.c:370]: (error) Possible null pointer dereference: pTS
+[linux-v3.9/drivers/staging/rtl8192e/rtl819x_BAProc.c:394]: (error) Possible null pointer dereference: pTS
+[linux-v3.9/drivers/staging/rtl8192e/rtl819x_BAProc.c:408]: (error) Possible null pointer dereference: pTS
+[linux-v3.9/drivers/staging/rtl8192e/rtl819x_BAProc.c:409]: (error) Possible null pointer dereference: pTS
+[linux-v3.9/drivers/staging/rtl8192u/ieee80211/aes.c:311]: (error) Array 'ctx.E[60]' accessed at index 60, which is out of bounds.
+[linux-v3.9/drivers/staging/rtl8192u/ieee80211/aes.c:311]: (error) Array 'ctx.E[60]' accessed at index 61, which is out of bounds.
+[linux-v3.9/drivers/staging/rtl8192u/ieee80211/aes.c:311]: (error) Array 'ctx.E[60]' accessed at index 62, which is out of bounds.
+[linux-v3.9/drivers/staging/rtl8192u/ieee80211/aes.c:311]: (error) Array 'ctx.E[60]' accessed at index 63, which is out of bounds.
+[linux-v3.9/drivers/staging/rtl8192u/ieee80211/rtl819x_BAProc.c:483]: (error) Possible null pointer dereference: pTS
+[linux-v3.9/drivers/staging/rtl8192u/ieee80211/rtl819x_BAProc.c:521]: (error) Possible null pointer dereference: pTS
+[linux-v3.9/drivers/staging/rtl8192u/ieee80211/rtl819x_BAProc.c:541]: (error) Possible null pointer dereference: pTS
+[linux-v3.9/drivers/staging/rtl8192u/r8192U_core.c:1466]: (error) Possible null pointer dereference: dev
+[linux-v3.9/drivers/staging/rtl8192u/r8192U_core.c:5386]: (error) Possible null pointer dereference: driver_info
+[linux-v3.9/drivers/staging/rtl8712/rtl871x_recv.h:244]: (error) Uninitialized variable: buf_desc
+[linux-v3.9/drivers/staging/rtl8712/rtl871x_recv.h:261]: (error) Uninitialized variable: buf_star
+[linux-v3.9/drivers/staging/rtl8712/rtl871x_ioctl_linux.c:1830]: (error) Memory leak: param
+[linux-v3.9/drivers/staging/rtl8712/rtl871x_mlme.c:1296]: (error) Memory leak: pcmd
+[linux-v3.9/drivers/staging/rtl8712/rtl871x_mlme.c:1296]: (error) Memory leak: psetkeyparm
+[linux-v3.9/drivers/staging/slicoss/slicoss.c:2830]: (error) Possible null pointer dereference: hcmd
+[linux-v3.9/drivers/staging/tidspbridge/pmgr/io.c:65]: (error) Possible null pointer dereference: pio_mgr
+[linux-v3.9/drivers/staging/tidspbridge/pmgr/io.c:66]: (error) Possible null pointer dereference: pio_mgr
+[linux-v3.9/drivers/staging/tidspbridge/pmgr/dspapi.c:363]: (error) Uninitialized variable: num_nodes
+[linux-v3.9/drivers/staging/tidspbridge/pmgr/dspapi.c:396]: (error) Uninitialized variable: num_procs
+[linux-v3.9/drivers/staging/tidspbridge/pmgr/dspapi.c:503]: (error) Uninitialized variable: index
+[linux-v3.9/drivers/staging/tidspbridge/pmgr/dspapi.c:1787]: (error) Uninitialized variable: mask
+[linux-v3.9/drivers/staging/usbip/userspace/libsrc/names.c:263]: (error) Memory leak: p
+[linux-v3.9/drivers/staging/usbip/userspace/libsrc/usbip_host_driver.c:130]: (error) Common realloc mistake: 'edev' nulled but not freed upon failure
+[linux-v3.9/drivers/staging/usbip/vhci_sysfs.c:184]: (warning) %u in format string (no. 2) requires 'unsigned int *' but the argument type is 'int *'.
+[linux-v3.9/drivers/staging/vt6655/device_main.c:1144]: (error) Uninitialized variable: pci_cmd
+[linux-v3.9/drivers/staging/vt6656/bssdb.c:630]: (error) Division by zero.
+[linux-v3.9/drivers/staging/wlan-ng/cfg80211.c:76]: (error) Uninitialized variable: msg
+[linux-v3.9/drivers/staging/wlan-ng/cfg80211.c:89]: (error) Uninitialized variable: msg
+[linux-v3.9/drivers/staging/wlan-ng/cfg80211.c:678]: (error) Uninitialized variable: msg
+[linux-v3.9/drivers/staging/wlan-ng/prism2sta.c:1963]: (error) Uninitialized variable: msg
+[linux-v3.9/drivers/staging/xgifb/vb_init.c:512]: (error) Array 'pVBInfo.SR15[3]' accessed at index 3, which is out of bounds.
+[linux-v3.9/drivers/staging/xgifb/vb_init.c:296]: (error) Array 'pVBInfo.CR40[3]' accessed at index 11, which is out of bounds.
+[linux-v3.9/drivers/staging/xgifb/vb_init.c:299]: (error) Array 'pVBInfo.CR40[3]' accessed at index 12, which is out of bounds.
+[linux-v3.9/drivers/staging/xgifb/vb_init.c:302]: (error) Array 'pVBInfo.CR40[3]' accessed at index 13, which is out of bounds.
+[linux-v3.9/drivers/staging/xgifb/vb_init.c:316]: (error) Array 'pVBInfo.CR40[3]' accessed at index 11, which is out of bounds.
+[linux-v3.9/drivers/staging/xgifb/vb_init.c:320]: (error) Array 'pVBInfo.CR40[3]' accessed at index 12, which is out of bounds.
+[linux-v3.9/drivers/staging/xgifb/vb_init.c:324]: (error) Array 'pVBInfo.CR40[3]' accessed at index 13, which is out of bounds.
+[linux-v3.9/drivers/staging/xgifb/vb_init.c:335]: (error) Array 'pVBInfo.CR40[3]' accessed at index 13, which is out of bounds.
+[linux-v3.9/drivers/staging/xgifb/vb_init.c:348]: (error) Array 'pVBInfo.CR40[3]' accessed at index 12, which is out of bounds.
+[linux-v3.9/drivers/staging/xgifb/vb_init.c:352]: (error) Array 'pVBInfo.CR40[3]' accessed at index 11, which is out of bounds.
+[linux-v3.9/drivers/staging/xgifb/vb_init.c:377]: (error) Array 'pVBInfo.CR40[3]' accessed at index 13, which is out of bounds.
+[linux-v3.9/drivers/staging/xgifb/vb_init.c:385]: (error) Array 'pVBInfo.CR40[3]' accessed at index 12, which is out of bounds.
+[linux-v3.9/drivers/staging/xgifb/vb_init.c:388]: (error) Array 'pVBInfo.CR40[3]' accessed at index 11, which is out of bounds.
+[linux-v3.9/drivers/staging/xgifb/vb_init.c:421]: (error) Array 'pVBInfo.CR40[3]' accessed at index 8, which is out of bounds.
+[linux-v3.9/drivers/staging/xgifb/vb_init.c:422]: (error) Array 'pVBInfo.CR40[3]' accessed at index 5, which is out of bounds.
+[linux-v3.9/drivers/staging/xgifb/vb_init.c:423]: (error) Array 'pVBInfo.CR40[3]' accessed at index 6, which is out of bounds.
+[linux-v3.9/drivers/staging/xgifb/vb_init.c:424]: (error) Array 'pVBInfo.CR40[3]' accessed at index 7, which is out of bounds.
+[linux-v3.9/drivers/staging/xgifb/vb_init.c:443]: (error) Array 'pVBInfo.CR40[3]' accessed at index 9, which is out of bounds.
+[linux-v3.9/drivers/staging/xgifb/vb_init.c:446]: (error) Array 'pVBInfo.CR40[3]' accessed at index 10, which is out of bounds.
+[linux-v3.9/drivers/staging/xgifb/vb_init.c:457]: (error) Array 'pVBInfo.CR40[3]' accessed at index 3, which is out of bounds.
+[linux-v3.9/drivers/staging/xgifb/vb_init.c:488]: (error) Array 'pVBInfo.CR40[3]' accessed at index 4, which is out of bounds.
+[linux-v3.9/drivers/staging/xgifb/vb_init.c:473]: (error) Array 'pVBInfo.CR40[3]' accessed at index 20, which is out of bounds.
+[linux-v3.9/drivers/staging/xgifb/vb_init.c:477]: (error) Array 'pVBInfo.CR40[3]' accessed at index 23, which is out of bounds.
+[linux-v3.9/drivers/thermal/thermal_sys.c:808]: (warning) %ld in format string (no. 1) requires 'long *' but the argument type is 'unsigned long *'.
+[linux-v3.9/drivers/tty/isicom.c:1581]: (error) Possible null pointer dereference: board
+[linux-v3.9/drivers/tty/isicom.c:1582]: (error) Possible null pointer dereference: board
+[linux-v3.9/drivers/tty/isicom.c:1583]: (error) Possible null pointer dereference: board
+[linux-v3.9/drivers/tty/mxser.c:2225]: (error) Possible null pointer dereference: brd
+[linux-v3.9/drivers/tty/n_gsm.c:2113]: (error) Memory leak: dlci
+[linux-v3.9/drivers/tty/serial/msm_serial.c:818]: (error) Uninitialized variable: baud
+[linux-v3.9/drivers/tty/serial/vt8500_serial.c:563]: (error) Uninitialized variable: port
+[linux-v3.9/drivers/tty/sysrq.c:134]: (error) Possible null pointer dereference: killer
+[linux-v3.9/drivers/tty/tty_io.c:1405]: (error) Possible null pointer dereference: driver
+[linux-v3.9/drivers/usb/atm/cxacru.c:1110]: (error) Uninitialized variable: bp
+[linux-v3.9/drivers/usb/chipidea/debug.c:668]: (warning) %li in format string (no. 1) requires 'long *' but the argument type is 'unsigned long *'.
+[linux-v3.9/drivers/usb/chipidea/debug.c:668]: (warning) %li in format string (no. 2) requires 'long *' but the argument type is 'unsigned long *'.
+[linux-v3.9/drivers/usb/atm/usbatm.c:1381]: (error) Undefined behavior: Variable 'buffer' is used as parameter and destination in s[n]printf().
+[linux-v3.9/drivers/usb/class/usbtmc.c:695]: (error) Uninitialized variable: actual
+[linux-v3.9/drivers/usb/core/config.c:336]: (error) Possible null pointer dereference: intfc
+[linux-v3.9/drivers/usb/core/config.c:337]: (error) Possible null pointer dereference: intfc
+[linux-v3.9/drivers/usb/gadget/dummy_hcd.c:277]: (error) Uninitialized variable: ep
+[linux-v3.9/drivers/usb/gadget/f_fs.c:1939]: (error) Memory leak: d
+[linux-v3.9/drivers/usb/gadget/rndis.c:599]: (error) Memory leak: r
+[linux-v3.9/drivers/usb/gadget/rndis.c:702]: (error) Memory leak: r
+[linux-v3.9/drivers/usb/gadget/rndis.c:725]: (error) Memory leak: r
+[linux-v3.9/drivers/usb/gadget/rndis.c:754]: (error) Memory leak: r
+[linux-v3.9/drivers/usb/gadget/fsl_udc_core.c:868]: (error) Possible null pointer dereference: last_dtd
+[linux-v3.9/drivers/usb/gadget/fsl_udc_core.c:869]: (error) Possible null pointer dereference: last_dtd
+[linux-v3.9/drivers/usb/gadget/mv_u3d_core.c:316]: (error) Memory leak: trb
+[linux-v3.9/drivers/usb/gadget/mv_u3d_core.c:460]: (error) Memory leak: trb
+[linux-v3.9/drivers/usb/gadget/mv_udc_core.c:443]: (error) Possible null pointer dereference: last_dtd
+[linux-v3.9/drivers/usb/gadget/mv_udc_core.c:444]: (error) Possible null pointer dereference: last_dtd
+[linux-v3.9/drivers/usb/gadget/mv_u3d_core.c:167]: (error) Uninitialized variable: remaining_length
+[linux-v3.9/drivers/usb/gadget/lpc32xx_udc.c:557]: (error) Uninitialized variable: ep
+[linux-v3.9/drivers/usb/gadget/omap_udc.c:1359]: (error) Uninitialized variable: ep
+[linux-v3.9/drivers/usb/host/isp1362.h:932]: (error) Uninitialized variable: __v
+[linux-v3.9/drivers/usb/host/isp1362-hcd.c:435]: (error) Uninitialized variable: __v
+[linux-v3.9/drivers/usb/host/isp1362-hcd.c:441]: (error) Uninitialized variable: __v
+[linux-v3.9/drivers/usb/host/isp1362-hcd.c:698]: (error) Uninitialized variable: __v
+[linux-v3.9/drivers/usb/host/isp1362-hcd.c:706]: (error) Uninitialized variable: __v
+[linux-v3.9/drivers/usb/host/isp1362-hcd.c:714]: (error) Uninitialized variable: __v
+[linux-v3.9/drivers/usb/host/isp1362-hcd.c:1048]: (error) Uninitialized variable: __v
+[linux-v3.9/drivers/usb/host/isp1362-hcd.c:1057]: (error) Uninitialized variable: __v
+[linux-v3.9/drivers/usb/host/isp1362-hcd.c:1071]: (error) Uninitialized variable: __v
+[linux-v3.9/drivers/usb/host/isp1362-hcd.c:1102]: (error) Uninitialized variable: __v
+[linux-v3.9/drivers/usb/host/isp1362-hcd.c:1124]: (error) Uninitialized variable: __v
+[linux-v3.9/drivers/usb/musb/cppi_dma.c:857]: (error) Possible null pointer dereference: tail
+[linux-v3.9/drivers/usb/musb/cppi_dma.c:858]: (error) Possible null pointer dereference: tail
+[linux-v3.9/drivers/usb/serial/mos7720.c:1248]: (error) Possible null pointer dereference: urb
+[linux-v3.9/drivers/usb/serial/mos7840.c:1469]: (error) Possible null pointer dereference: urb
+[linux-v3.9/drivers/usb/serial/mos7840.c:1413]: (error) Uninitialized variable: mos7840_port
+[linux-v3.9/drivers/usb/serial/mos7840.c:1415]: (error) Uninitialized variable: mos7840_port
+[linux-v3.9/drivers/usb/serial/mos7840.c:1435]: (error) Uninitialized variable: mos7840_port
+[linux-v3.9/drivers/video/aty/mach64_ct.c:180]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/video/aty/mach64_ct.c:183]: (error) Shifting by a negative value is undefined behaviour
+[linux-v3.9/drivers/video/broadsheetfb.c:673]: (error) Memory leak: sector_buffer
+[linux-v3.9/drivers/video/cyber2000fb.c:1962]: (error) Uninitialized variable: err
+[linux-v3.9/drivers/video/omap/omapfb_main.c:1374]: (warning) %d in format string (no. 1) requires 'int *' but the argument type is 'unsigned int *'.
+[linux-v3.9/drivers/video/omap2/omapfb/omapfb-ioctl.c:476]: (error) Possible null pointer dereference: mgr
+[linux-v3.9/drivers/video/sm501fb.c:1768]: (error) Possible null pointer dereference: pd
+[linux-v3.9/drivers/video/sis/init301.c:5717]: (error) Division by zero.
+[linux-v3.9/fs/9p/vfs_inode.c:150]: (warning) %u in format string (no. 2) requires 'unsigned int *' but the argument type is 'int *'.
+[linux-v3.9/fs/9p/vfs_inode.c:150]: (warning) %u in format string (no. 3) requires 'unsigned int *' but the argument type is 'int *'.
+[linux-v3.9/fs/adfs/dir.c:67]: (error) Deallocation of an auto-variable results in undefined behaviour.
+[linux-v3.9/fs/adfs/dir.c:187]: (error) Deallocation of an auto-variable results in undefined behaviour.
+[linux-v3.9/fs/adfs/dir.c:103]: (error) Deallocation of an auto-variable results in undefined behaviour.
+[linux-v3.9/fs/bio.c:146]: (error) Possible null pointer dereference: bslab
+[linux-v3.9/fs/btrfs/ctree.c:541]: (error) Memory leak: tm
+[linux-v3.9/fs/btrfs/disk-io.c:178]: (error) Uninitialized variable: ks
+[linux-v3.9/fs/btrfs/send.c:1590]: (error) Uninitialized struct member: found_key.objectid
+[linux-v3.9/fs/btrfs/send.c:1591]: (error) Uninitialized struct member: found_key.type
+[linux-v3.9/fs/cifs/cifs_dfs_ref.c:252]: (error) Memory leak: devname
+[linux-v3.9/fs/cifs/connect.c:3488]: (error) Uninitialized variable: xid
+[linux-v3.9/fs/cifs/connect.c:3485]: (error) Uninitialized variable: ses
+[linux-v3.9/fs/cifs/connect.c:3483]: (error) Uninitialized variable: tcon
+[linux-v3.9/fs/exofs/ore.c:199]: (error) Memory leak: extra_part
+[linux-v3.9/fs/exofs/super.c:570]: (error) Memory leak: aoded
+[linux-v3.9/fs/fuse/file.c:1928]: (error) Possible null pointer dereference: pages
+[linux-v3.9/fs/jfs/jfs_txnmgr.c:1933]: (error) Uninitialized variable: pxd
+[linux-v3.9/fs/jfs/jfs_txnmgr.c:1933]: (error) Uninitialized struct member: pxd.len
+[linux-v3.9/fs/jfs/jfs_txnmgr.c:1933]: (error) Uninitialized struct member: pxd.addr1
+[linux-v3.9/fs/jfs/jfs_txnmgr.c:1933]: (error) Uninitialized struct member: pxd.addr2
+[linux-v3.9/fs/nfsd/nfs4recover.c:1073]: (error) Null pointer dereference
+[linux-v3.9/fs/nfsd/nfs4recover.c:1102]: (error) Null pointer dereference
+[linux-v3.9/fs/nfsd/nfsctl.c:720]: (warning) %u in format string (no. 2) requires 'unsigned int *' but the argument type is 'int *'.
+[linux-v3.9/fs/nfsd/nfssvc.c:317]: (error) Array 'nfsd_version[1]' accessed at index 2, which is out of bounds.
+[linux-v3.9/fs/nfsd/nfssvc.c:317]: (error) Array 'nfsd_version[2]' accessed at index 2, which is out of bounds.
+[linux-v3.9/fs/nfsd/vfs.c:550]: (error) Memory leak: buf
+[linux-v3.9/fs/ntfs/compress.c:228]: (error) Uninitialized variable: completed_pages
+[linux-v3.9/fs/ocfs2/dlm/dlmrecovery.c:1825]: (error) Possible null pointer dereference: lock
+[linux-v3.9/fs/ocfs2/move_extents.c:488]: (error) Possible null pointer dereference: bg
+[linux-v3.9/fs/reiserfs/do_balan.c:1677]: (error) Array 'tb.FEB[6]' accessed at index 6, which is out of bounds.
+[linux-v3.9/fs/reiserfs/do_balan.c:1679]: (error) Array 'tb.FEB[6]' accessed at index 6, which is out of bounds.
+[linux-v3.9/fs/reiserfs/do_balan.c:1680]: (error) Array 'tb.used[6]' accessed at index 6, which is out of bounds.
+[linux-v3.9/fs/reiserfs/do_balan.c:1680]: (error) Array 'tb.FEB[6]' accessed at index 6, which is out of bounds.
+[linux-v3.9/fs/reiserfs/do_balan.c:1681]: (error) Array 'tb.FEB[6]' accessed at index 6, which is out of bounds.
+[linux-v3.9/fs/reiserfs/do_balan.c:1683]: (error) Array 'tb.used[6]' accessed at index 6, which is out of bounds.
+[linux-v3.9/fs/xfs/xfs_btree.c:3121]: (error) Array 'cur.bc_ptrs[8]' accessed at index 9998, which is out of bounds.
+[linux-v3.9/fs/xfs/xfs_dir2_node.c:1269]: (error) Possible null pointer dereference: bp
+[linux-v3.9/fs/xfs/xfs_dir2_node.c:318]: (error) Uninitialized variable: highstale
+[linux-v3.9/fs/xfs/xfs_dir2_node.c:317]: (error) Uninitialized variable: lowstale
+[linux-v3.9/fs/xfs/xfs_filestream.c:351]: (error) Possible null pointer dereference: ip
+[linux-v3.9/fs/xfs/xfs_filestream.c:354]: (error) Possible null pointer dereference: ip
+[linux-v3.9/kernel/compat.c:223]: (error) Uninitialized variable: rmt
+[linux-v3.9/kernel/compat.c:232]: (error) Uninitialized variable: rmt
+[linux-v3.9/kernel/compat.c:255]: (error) Uninitialized variable: rmt
+[linux-v3.9/kernel/compat.c:266]: (error) Uninitialized variable: rmt
+[linux-v3.9/kernel/compat.c:526]: (error) Uninitialized variable: r
+[linux-v3.9/kernel/compat.c:532]: (error) Uninitialized variable: r
+[linux-v3.9/kernel/compat.c:556]: (error) Uninitialized variable: r
+[linux-v3.9/kernel/compat.c:560]: (error) Uninitialized variable: r
+[linux-v3.9/kernel/compat.c:583]: (error) Uninitialized variable: ru
+[linux-v3.9/kernel/compat.c:594]: (error) Uninitialized variable: ru
+[linux-v3.9/kernel/compat.c:718]: (error) Uninitialized variable: oldts
+[linux-v3.9/kernel/compat.c:720]: (error) Uninitialized variable: oldts
+[linux-v3.9/kernel/compat.c:735]: (error) Uninitialized variable: ts
+[linux-v3.9/kernel/compat.c:737]: (error) Uninitialized variable: ts
+[linux-v3.9/kernel/compat.c:769]: (error) Uninitialized variable: ts
+[linux-v3.9/kernel/compat.c:771]: (error) Uninitialized variable: ts
+[linux-v3.9/kernel/compat.c:809]: (error) Uninitialized variable: ts
+[linux-v3.9/kernel/compat.c:811]: (error) Uninitialized variable: ts
+[linux-v3.9/kernel/compat.c:823]: (error) Uninitialized variable: tu
+[linux-v3.9/kernel/compat.c:830]: (error) Uninitialized variable: tu
+[linux-v3.9/kernel/compat.c:856]: (error) Uninitialized variable: out
+[linux-v3.9/kernel/compat.c:860]: (error) Uninitialized variable: out
+[linux-v3.9/kernel/compat.c:1215]: (error) Uninitialized variable: t
+[linux-v3.9/kernel/compat.c:1217]: (error) Uninitialized variable: t
+[linux-v3.9/kernel/posix-timers.c:324]: (error) Uninitialized variable: __timr
+[linux-v3.9/kernel/posix-timers.c:729]: (error) Uninitialized variable: __timr
+[linux-v3.9/kernel/posix-timers.c:762]: (error) Uninitialized variable: __timr
+[linux-v3.9/kernel/posix-timers.c:845]: (error) Uninitialized variable: __timr
+[linux-v3.9/kernel/posix-timers.c:893]: (error) Uninitialized variable: __timr
+[linux-v3.9/kernel/power/hibernate.c:893]: (error) Array 'hibernation_modes[3]' accessed at index 3, which is out of bounds.
+[linux-v3.9/kernel/power/hibernate.c:931]: (error) Array 'hibernation_modes[3]' accessed at index 3, which is out of bounds.
+[linux-v3.9/kernel/power/hibernate.c:932]: (error) Array 'hibernation_modes[3]' accessed at index 3, which is out of bounds.
+[linux-v3.9/kernel/power/hibernate.c:893]: (error) Array 'hibernation_modes[4]' accessed at index 4, which is out of bounds.
+[linux-v3.9/kernel/power/hibernate.c:931]: (error) Array 'hibernation_modes[4]' accessed at index 4, which is out of bounds.
+[linux-v3.9/kernel/power/hibernate.c:932]: (error) Array 'hibernation_modes[4]' accessed at index 4, which is out of bounds.
+[linux-v3.9/kernel/signal.c:3241]: (error) Uninitialized variable: uoss
+[linux-v3.9/kernel/trace/ftrace.c:167]: (error) Boolean value assigned to pointer.
+[linux-v3.9/kernel/trace/ftrace.c:4137]: (error) Boolean value assigned to pointer.
+[linux-v3.9/kernel/trace/ftrace.c:4169]: (error) Boolean value assigned to pointer.
+[linux-v3.9/lib/flex_array.c:289]: (error) Memory leak: part
+[linux-v3.9/mm/frontswap.c:245]: (error) Possible null pointer dereference: si
+[linux-v3.9/mm/frontswap.c:263]: (error) Possible null pointer dereference: si
+[linux-v3.9/mm/mlock.c:500]: (error) Possible null pointer dereference: prev
+[linux-v3.9/mm/percpu.c:1063]: (error) Uninitialized variable: ai
+[linux-v3.9/mm/slab.c:2828]: (error) Uninitialized variable: slabp
+[linux-v3.9/net/ax25/ax25_dev.c:37]: (error) Uninitialized variable: ax25_dev
+[linux-v3.9/net/ax25/ax25_dev.c:141]: (error) Uninitialized variable: ax25_dev
+[linux-v3.9/net/bluetooth/a2mp.c:1005]: (error) Memory leak: mgr
+[linux-v3.9/net/ceph/mon_client.c:65]: (error) Possible null pointer dereference: m
+[linux-v3.9/net/core/skbuff.c:2802]: (error) Possible null pointer dereference: tail
+[linux-v3.9/net/ipv6/ip6_gre.c:713]: (error) Uninitialized variable: max_headroom
+[linux-v3.9/net/ipv6/netfilter/nf_conntrack_reasm.c:406]: (error) Uninitialized variable: head
+[linux-v3.9/net/ipv6/reassembly.c:437]: (error) Uninitialized variable: head
+[linux-v3.9/net/netfilter/ipvs/ip_vs_ctl.c:2695]: (error) sprintf format string requires 4 parameters but only 2 are given.
+[linux-v3.9/net/phonet/pn_dev.c:162]: (error) Memory leak: pnd
+[linux-v3.9/net/sctp/sm_make_chunk.c:1450]: (error) Possible null pointer dereference: data
+[linux-v3.9/net/wireless/wext-sme.c:369]: (error) Possible null pointer dereference: ie
+[linux-v3.9/scripts/docproc.c:394]: (error) Common realloc mistake: 'data' nulled but not freed upon failure
+[linux-v3.9/scripts/docproc.c:418]: (error) Common realloc mistake: 'all_list' nulled but not freed upon failure
+[linux-v3.9/scripts/dtc/util.h:34]: (error) va_list 'ap' was opened but not closed by va_end().
+[linux-v3.9/scripts/dtc/checks.c:116]: (error) va_list 'ap' was opened but not closed by va_end().
+[linux-v3.9/scripts/dtc/fdtput.c:99]: (error) Common realloc mistake: 'value' nulled but not freed upon failure
+[linux-v3.9/scripts/dtc/util.c:214]: (error) Common realloc mistake: 'buf' nulled but not freed upon failure
+[linux-v3.9/scripts/genksyms/genksyms.c:879]: (error) Resource leak: dumpfile
+[linux-v3.9/scripts/kconfig/confdata.c:970]: (error) Resource leak: tristate
+[linux-v3.9/scripts/kconfig/confdata.c:62]: (error) va_list 'ap' was opened but not closed by va_end().
+[linux-v3.9/scripts/kconfig/nconf.gui.c:375]: (error) Common realloc mistake: 'result' nulled but not freed upon failure
+[linux-v3.9/scripts/kconfig/nconf.gui.c:481]: (error) Common realloc mistake: 'result' nulled but not freed upon failure
+[linux-v3.9/scripts/kconfig/symbol.c:892]: (error) Common realloc mistake: 'res' nulled but not freed upon failure
+[linux-v3.9/security/apparmor/match.c:62]: (error) Uninitialized struct member: th.td_hilen
+[linux-v3.9/security/apparmor/match.c:62]: (error) Uninitialized struct member: th.td_data
+[linux-v3.9/security/selinux/selinuxfs.c:1342]: (warning) %u in format string (no. 1) requires 'unsigned int *' but the argument type is 'int *'.
+[linux-v3.9/security/smack/smackfs.c:1116]: (warning) %d in format string (no. 5) requires 'int *' but the argument type is 'unsigned int *'.
+[linux-v3.9/sound/core/seq/seq_dummy.c:222]: (error) Memory leak: rec1
+[linux-v3.9/sound/core/seq/seq_dummy.c:230]: (error) Memory leak: rec2
+[linux-v3.9/sound/oss/midi_synth.c:51]: (error) Uninitialized variable: len
+[linux-v3.9/sound/oss/midi_synth.c:57]: (error) Uninitialized variable: len
+[linux-v3.9/sound/oss/midi_synth.c:61]: (error) Uninitialized variable: len
+[linux-v3.9/sound/oss/midi_synth.c:66]: (error) Uninitialized variable: len
+[linux-v3.9/sound/oss/midi_synth.c:70]: (error) Uninitialized variable: len
+[linux-v3.9/sound/oss/midi_synth.c:74]: (error) Uninitialized variable: len
+[linux-v3.9/sound/oss/midi_synth.c:79]: (error) Uninitialized variable: len
+[linux-v3.9/sound/oss/mpu401.c:1661]: (error) Uninitialized variable: len
+[linux-v3.9/sound/oss/mpu401.c:1672]: (error) Uninitialized variable: len
+[linux-v3.9/sound/oss/mpu401.c:1682]: (error) Uninitialized variable: len
+[linux-v3.9/sound/oss/mpu401.c:1690]: (error) Uninitialized variable: len
+[linux-v3.9/sound/pci/hda/patch_sigmatel.c:775]: (warning) %d in format string (no. 1) requires 'int *' but the argument type is 'unsigned int *'.
+[linux-v3.9/sound/pci/hda/patch_sigmatel.c:788]: (warning) %d in format string (no. 1) requires 'int *' but the argument type is 'unsigned int *'.
+[linux-v3.9/sound/pci/hda/patch_via.c:745]: (error) Memory leak: spec
+[linux-v3.9/sound/pci/hda/patch_via.c:768]: (error) Memory leak: spec
+[linux-v3.9/sound/pci/hda/patch_via.c:870]: (error) Memory leak: spec
+[linux-v3.9/sound/pci/hda/patch_via.c:935]: (error) Memory leak: spec
+[linux-v3.9/sound/pci/hda/patch_via.c:1009]: (error) Memory leak: spec
+[linux-v3.9/sound/pci/hda/patch_via.c:1151]: (error) Memory leak: spec
+[linux-v3.9/sound/pci/hda/patch_via.c:1343]: (error) Memory leak: spec
+[linux-v3.9/sound/pci/hda/patch_via.c:1545]: (error) Memory leak: spec
+[linux-v3.9/sound/pci/hda/patch_via.c:1661]: (error) Memory leak: spec
+[linux-v3.9/sound/pci/hda/patch_via.c:1780]: (error) Memory leak: spec
+[linux-v3.9/sound/pci/ice1712/wm8766.c:256]: (error) Uninitialized variable: val2
+[linux-v3.9/sound/pci/ice1712/wm8776.c:529]: (error) Uninitialized variable: val2
+[linux-v3.9/sound/pci/lola/lola_proc.c:154]: (warning) %i in format string (no. 1) requires 'int *' but the argument type is 'unsigned int *'.
+[linux-v3.9/sound/pci/lola/lola_proc.c:154]: (warning) %i in format string (no. 2) requires 'int *' but the argument type is 'unsigned int *'.
+[linux-v3.9/sound/pci/lola/lola_proc.c:154]: (warning) %i in format string (no. 3) requires 'int *' but the argument type is 'unsigned int *'.
+[linux-v3.9/sound/pci/lola/lola_proc.c:154]: (warning) %i in format string (no. 4) requires 'int *' but the argument type is 'unsigned int *'.
+[linux-v3.9/sound/pci/pcxhr/pcxhr.c:729]: (error) Uninitialized struct member: pipe.first_audio
+[linux-v3.9/sound/soc/codecs/ad193x.c:488]: (error) Uninitialized variable: ret
+[linux-v3.9/sound/soc/codecs/tlv320aic23.c:675]: (error) Uninitialized variable: ret
+[linux-v3.9/sound/synth/emux/soundfont.c:1024]: (error) Memory leak: zone
+[linux-v3.9/tools/hv/hv_kvp_daemon.c:281]: (error) Common realloc mistake: 'record' nulled but not freed upon failure
+[linux-v3.9/tools/hv/hv_kvp_daemon.c:383]: (error) Common realloc mistake: 'record' nulled but not freed upon failure
+[linux-v3.9/tools/lib/traceevent/event-parse.c:250]: (error) Common realloc mistake: 'cmdlines' nulled but not freed upon failure
+[linux-v3.9/tools/perf/bench/sched-messaging.c:335]: (error) Memory leak: pth_tab
+[linux-v3.9/tools/perf/builtin-kmem.c:370]: (error) Uninitialized variable: map
+[linux-v3.9/tools/perf/builtin-kmem.c:370]: (error) Uninitialized struct member: map.unmap_ip
+[linux-v3.9/tools/perf/builtin-stat.c:1364]: (error) Possible null pointer dereference: output_name
+[linux-v3.9/tools/perf/perf.c:272]: (error) Common realloc mistake: 'new_argv' nulled but not freed upon failure
+[linux-v3.9/tools/perf/tests/dso-data.c:47]: (error) Memory leak: buf
+[linux-v3.9/tools/perf/util/cpumap.c:54]: (warning) %u in format string (no. 1) requires 'unsigned int *' but the argument type is 'int *'.
+[linux-v3.9/tools/power/cpupower/bench/parse.c:180]: (warning) %a in format string (no. 1) requires 'float *' but the argument type is 'char * *'.
+[linux-v3.9/tools/power/cpupower/bench/parse.c:180]: (warning) %a in format string (no. 2) requires 'float *' but the argument type is 'char * *'.
+[linux-v3.9/tools/power/cpupower/bench/parse.c:166]: (error) Resource leak: configfile
+[linux-v3.9/tools/power/cpupower/bench/parse.c:87]: (error) Common realloc mistake: 'filename' nulled but not freed upon failure
+[linux-v3.9/tools/power/cpupower/utils/cpufreq-info.c:43]: (warning) %d in format string (no. 1) requires 'int *' but the argument type is 'unsigned int *'.
+[linux-v3.9/tools/power/cpupower/utils/cpupower.c:95]: (error) Memory leak: page
+[linux-v3.9/tools/power/x86/x86_energy_perf_policy/x86_energy_perf_policy.c:288]: (warning) %u in format string (no. 1) requires 'unsigned int *' but the argument type is 'int *'.
+[linux-v3.9/tools/power/x86/turbostat/turbostat.c:1287]: (warning) %u in format string (no. 1) requires 'unsigned int *' but the argument type is 'int *'.
