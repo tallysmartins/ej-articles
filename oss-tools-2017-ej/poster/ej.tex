@@ -44,16 +44,11 @@
 \begin{frame}
   \begin{columns}
     % ---------------------------------------------------------%
-    % Set up a column 
+    % Set up a column
     \begin{column}{.49\textwidth}
       \begin{beamercolorbox}[center,wd=\textwidth]{postercolumn}
-        \begin{minipage}[T]{.95\textwidth}  % tweaks the width, makes a new \textwidth
+        \begin{minipage}[T]{.95\textwidth}
           \parbox[t][\columnheight]{\textwidth}{
-            % must be some better way to set the the height, width and textwidth simultaneously
-            % Since all columns are the same length, it is all nice and tidy.  You have to get the height empirically
-            % ---------------------------------------------------------%
-            % fill each column with content
-            %\vfill
 
 \begin{block}{What is Empujando Juntos}
 
@@ -86,7 +81,7 @@
         \label{fig:background:free-software-repository}
       \end{center}
     \end{figure}
-    
+
   \end{itemize}
 \end{block}
 
@@ -118,8 +113,6 @@
   \end{itemize}
 \end{block}
 
-\vfill
-
 \begin{block}{System Architecture}
 	\begin{itemize}
     \item Front-end application, written in React Native\footnote{\url{facebook.github.io/react-native}}
@@ -138,12 +131,8 @@
     \end{center}
   \end{figure}
 \end{block}
-\vfill
 
 %-------------------------------------------------------------------------------
-\vfill
-
-
 }
 \end{minipage}
 \end{beamercolorbox}
@@ -152,7 +141,7 @@
 % end the column
 
 % ---------------------------------------------------------%
-% Set up a column 
+% Set up a column
 \begin{column}{.49\textwidth}
   \begin{beamercolorbox}[center,wd=\textwidth]{postercolumn}
     \begin{minipage}[T]{.95\textwidth} % tweaks the width, makes a new \textwidth
@@ -162,25 +151,23 @@
 
 \end{block}
 
-\vfill
-
-\begin{block}{Current Status and Future Work}
+\begin{block}{Final Remarks}
   \begin{itemize}
-    \item This is an ongoing research. Currently, we are preparing the first kiskadee
-      release (v0.1), to perform analysis on C/C++ packages of the Debian
-      GNU/Linux distribution using cppcheck, flawfinder and Frama-C.
+    \item Pushing Together arise as a potential tool to bridge dialog between society and
+    the state, making different analyzes about the opinion of the distinct groups
+    and also opening new possibilities for the expression of these opinions with ``the
+    Push`` resource. Besides, the project was born with transparency and collaboration
+    principles, building a base for a prospective evolution.
 
-    \item In the future, we want to extend kiskadee to monitor other software
-      repositories, such as SourceForge and git repositories. We also want to
-      improve the approach to handle persistent warnings (generated in previous
-      versions) by assigning them a lower grade during the classification process
-      instead of just omitting them.
+    \item We are now working on a research to evolve the clustering service that
+    will fit our application model. Parallelly, our next steps include evolving the
+    mobile application using mocked data and validating the user interface.
 
-    \item kiskadee development is open and can be found in \url{gitlab.com/kiskadee}.
+    \item All our contributions are published in open repositories available at \url{github.com/
+    cidadedemocratica/pushingtogether} and \url{github.com/cidadedemocratica/
+    app_pushingtogether}.
   \end{itemize}
 \end{block}
-
-
       }
         \end{minipage}
       \end{beamercolorbox}
