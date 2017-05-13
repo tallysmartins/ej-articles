@@ -3,7 +3,7 @@ TARGET = ej
 
 all: $(TARGET).tex 
 	$(LATEX) $<
-	evince $(TARGET).pdf &
+	evince $(TARGET).pdf </dev/null &>/dev/null &
 
 edit:
 	gedit Makefile *.bib *.tex &

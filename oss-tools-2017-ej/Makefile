@@ -6,7 +6,7 @@ all: $(TARGET).tex
 	bibtex $(TARGET)
 	pdflatex $(TARGET).tex
 	pdflatex $(TARGET).tex
-	evince $(TARGET).pdf &
+	evince $(TARGET).pdf </dev/null &>/dev/null &
 
 edit:
 	gedit Makefile *.bib *.tex &

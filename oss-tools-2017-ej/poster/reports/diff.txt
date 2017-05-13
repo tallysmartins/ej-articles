@@ -1,4 +1,0 @@
-[a2mp.c:1005]: (error) Memory leak: mgr
-[reassembly.c:437]: Uninitialized variable
-[builtin-kmem.c:370]: Uninitialized variable
-[dso-data.c:47]: (error) Memory leak: buf

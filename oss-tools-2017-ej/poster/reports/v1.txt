@@ -1,5 +1,0 @@
-[ucon.c:250]: Resource leak: out
-[mkpiggy.c:61]: Resource leak: f
-[bssdb.c:630]: Division by zero.
-[init301.c:5717]: Division by zero.
-[timer.c:206]: Memory leak: ttccs
