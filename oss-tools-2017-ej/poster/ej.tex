@@ -53,22 +53,52 @@
 \begin{block}{What is Empujando Juntos}
 
   \begin{itemize}
-    \item Allow people to create online conversations to debate about any subject
-    with a different paradigm that we call ``crowdsource``, which fosters
-    more engagement than standard models like forum/thread
+    \item A Free Open Source Software for social participation that aims to
+    increase communication between people in a online conversation.
+
+    \item A tool that allows activists and non extremist people to engage regular
+    people in online discussions.
+
+    \item Based on Polis, we deliver better experiences on debate process
+    with the ``crowdsource`` participation concept, which fosters
+    more engagement than standard models like forum/thread.
+  \end{itemize}
+\end{block}
+
+\begin{block}{Why Empurrando Juntos?}
+  \begin{itemize}
+    \item Encourages the interaction between different groups of opinion.
+
+    \item Brings new resources for online discussions using gamification concepts.
+
+    \item 100\% FOSS.
+  \end{itemize}
+\end{block}
+
+\begin{block}{Polis Features}
+  \begin{itemize}
+    \item Allow people to create online conversations to debate about any subject,
+    anonymous or not.
 
     \item People can to give their opinion by simple clicking in ``agree``,
-    ``disagree`` or ``skip`` in other's comments
+    ``disagree`` or ``skip`` in other's comments.
 
     \item Identify different groups of opinion based on the reactions of the
     participants in the comments using clustering algorithms.
 
-    \item Uses Polis engine to calculate the groups. Every opinion is considered,
-    majority and minority.
+    \item Identify majority and minority consensus in the global scope and in
+    each group scope. 
+  \end{itemize}
+\end{block}
 
-    \item Applying gamification concepts we invented the ``Push`` power. People in
-    ownership of this ability are able to send direct messages and create events
-    in the platform
+\begin{block}{Empujando Juntos Features}
+  \begin{itemize}
+    \item Uses Polis engine to obtain the groups of opinion.
+
+    \item Mobile responsive and minimalist design on top of Polis embed iframe.
+
+    \item Provides a resource that we called ``the Push``. People in ownership of
+    this ability are able to send direct messages and create events in the platform.
 
     \item The ``Push`` is given to special actors in the groups formed by Polis.
     Three profiles are considered, the activist, the bridge and the consultation
@@ -81,46 +111,28 @@
         \label{fig:background:free-software-repository}
       \end{center}
     \end{figure}
+  
+    \item Monitoring Polis conversations created through the App
+    to identify activists and bridge participants to give them the ``Push``
+    power.
 
-  \end{itemize}
-\end{block}
+    \item Activists can open events and notify people in his group cluster.
 
-\begin{block}{Why Empurrando Juntos?}
-  \begin{itemize}
-    \item We use the successful concept of conversation brought by Polis and extend it,
-    allowing users to have an even more interaction with each other.
+    \item Comments created by bridge people are spread to others by direct
+    notifications.
 
-    \item  The ``Push`` power aims to foster the discussion between different
-    groups of opinion, and increase the engagement of people in terms of social
-    participation.
-  \end{itemize}
-\end{block}
-
-\begin{block}{Empujando Juntos Features}
-  \begin{itemize}
-    \item Mobile responsive and minimalist design on top of Polis embed iframe
-
-    \item Hourly monitoring for Polis conversations created through the App
-    to identify activists and bridge participants and give them the ``Push``
-    resource
-
-    \item Activists can open events and notify people in his group cluster
-
-    \item Comments created by bridge people are spread to others through notifications
-
-    \item Consultation owners have their content highlighted and they can open
-    events that are notified to all other users
+    \item Consultation owners have their content highlighted and can also open
+    events in the platform, like activists
   \end{itemize}
 \end{block}
 
 \begin{block}{System Architecture}
 	\begin{itemize}
-    \item Front-end application, written in React Native\footnote{\url{facebook.github.io/react-native}}
-    and a NodeJS\footnote{\url{nodejs.org/en}} server.
+    \item Front-end application, written in React Native 
+    and a NodeJS server.
 
     \item The server module is responsible for managing users, ``the Push'', and
-    to make the interface with Polis, which holds the conversation data and
-    the clustering engine for finding groups of opinion
+    to make the interface with Polis API
   \end{itemize}
 
   \begin{figure}
@@ -163,9 +175,11 @@
     will fit our application model. Parallelly, our next steps include evolving the
     mobile application using mocked data and validating the user interface.
 
-    \item All our contributions are published in open repositories available at \url{github.com/
-    cidadedemocratica/pushingtogether} and \url{github.com/cidadedemocratica/
-    app_pushingtogether}.
+    \item All our contributions are published in open repositories available at:
+      \begin{itemize}
+        \item \url{github.com/cidadedemocratica/pushingtogether}
+        \item \url{github.com/cidadedemocratica/app_pushingtogether}
+      \end{itemize}
   \end{itemize}
 \end{block}
       }
