@@ -28,12 +28,12 @@
 \date{}
 \author{\large Tallys Martins
 \and Dylan Guedes
-\and Luan Guimarães \\
+\and Luan Guimarï¿½es \\
 \and Ricardo Poppi
 \and Henrique Parra
 \and Paulo Meirelles
 }
-\institute[UNB/CD]{University of Brasília and Cidade Democrática NGO, Brazil}
+\institute[UNB/CD]{University of Brasï¿½lia and Cidade Democrï¿½tica NGO, Brazil}
 
 \newlength{\columnheight}
 \setlength{\columnheight}{105cm}
@@ -90,7 +90,7 @@
     participants in the comments using clustering algorithms.
 
     \item Identify majority and minority consensus in the global scope and in
-    each group scope. 
+    each group scope.
   \end{itemize}
 \end{block}
 
@@ -114,7 +114,7 @@
         \label{fig:background:free-software-repository}
       \end{center}
     \end{figure}
-  
+
     \item Monitoring Polis conversations created through the App
     to identify activists and bridge participants to give them the ``Push``
     power.
@@ -146,7 +146,7 @@
 
 \begin{block}{System Architecture}
 	\begin{itemize}
-    \item Front-end application, written in React Native 
+    \item Front-end application, written in React Native
     and a NodeJS server.
 
     \item The server module is responsible for managing users, ``the Push'', and
@@ -163,7 +163,15 @@
 \end{block}
 
 \begin{block}{Integration with Polis}
+\begin{itemize}
+  \item Based on an external user capability on Polis API (xID), Pushing Together
+  will create users and debates locally and just use polis clusters through xID
+  \item At the first moment, the webview of Polis consultations like group
+  exhibition and comments carousel will be used by Pushing Together UI
+  \item Some profiles can be calculated using Polis API (like the percentage of a
+  group a person is to know where the bridges are) but some could be made locally
 
+  \end{itemize}
 \end{block}
 
 \begin{block}{Final Remarks}
