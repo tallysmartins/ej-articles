@@ -70,7 +70,7 @@
     show the different opinion groups in a discussion.
 
     \item Allow people to create online conversations to debate about any subject,
-    anonymous and uses a different approach to build the dialog between users.
+    anonymous or not, and uses a different approach to build the dialog between users.
 
     \item Using a concept that we call ``crowdsource participation``, people can
     give their opinion by simple clicking in ``agree``, ``disagree`` or ``skip``
@@ -79,9 +79,18 @@
     \item The system applies clustering algorithms to identify the different groups
     of opinion based on the reactions of the participants in the comments.
 
-    \item Identify majority and minority consensus in the global scope and in
-    each group scope.
+    \item The majority and minority consensus is showed in a graph, and can be
+    displayed in the global scope considering all the participants or in each group
+    scope.
   \end{itemize}
+
+  \begin{figure}
+    \begin{center}
+      \includegraphics[scale=1.1]{../images/polis3.png}
+      \caption{Groups of opinion formed by Polis}
+      \label{fig:group-clusters}
+    \end{center}
+  \end{figure}
 \end{block}
 
 \begin{block}{What is Empujando Juntos}
@@ -101,51 +110,14 @@
 
 \begin{block}{Why Empurrando Juntos?}
   \begin{itemize}
-    \item E.J. goes beyond Polis and offers more interaction to users in a online
-    discussion.
+    \item E.J. goes beyond Polis by adding new features that offers more interaction
+    to the discussions.
 
-    \item Brings new resources using gamification concepts based on the profiles
-    of the participants as a mean to bring diversity to online discussions.
-
-    \item 100\% FOSS.
+    \item Uses gamification concepts based on the profiles of the participants as
+    a mean to bring diversity to online discussions.
   \end{itemize}
 \end{block}
 
-
-\begin{block}{Empujando Juntos Features}
-  \begin{itemize}
-    \item Uses Polis engine to obtain the groups of opinion.
-
-    \item Mobile responsive and minimalist design on top of Polis embed iframe.
-
-    \item Provides a resource that we called ``the Push``. People in ownership of
-    this ability (gamification) are able to send direct messages and create events in the platform.
-
-    \item The ``Push`` is given to special actors in the groups formed by Polis.
-    Three profiles are considered, the activist, the bridge and the consultation
-    owner.
-
-    \begin{figure}
-      \begin{center}
-        \includegraphics[scale=1.3]{../images/userprofiles.png}
-        \caption{Profiles identified by Empurrando Juntos}
-        \label{fig:background:free-software-repository}
-      \end{center}
-    \end{figure}
-
-    \item Monitoring Polis conversations created through the App
-    to identify activists and bridge participants to give them the ``Push``
-    power.
-
-    \item Activists can open events and notify people in his group cluster.
-
-    \item Comments created by bridge people are spread to others by direct
-    notifications.
-
-    \item Consultation creators have their content highlighted and can also open
-    events in the platform, like activists
-  \end{itemize}
-\end{block}
 
 %-------------------------------------------------------------------------------
 }
@@ -162,6 +134,31 @@
     \begin{minipage}[T]{.95\textwidth} % tweaks the width, makes a new \textwidth
       \parbox[t][\columnheight]{\textwidth}{ % must be some better way to set the the height, width and textwidth simultaneously
 
+\begin{block}{Empujando Juntos Features}
+  \begin{itemize}
+    \item Uses Polis engine to obtain the groups of opinion.
+
+    \item Provides a resource that we called ``the Push``. People in ownership of
+    this ability (gamification) can access special features in the platform.
+
+    \item The ``Push`` is given to special actors in the groups formed by Polis.
+    Three profiles are considered, the activist, the bridge and the consultation
+    owner.
+
+    \item Monitor Polis conversations created through the App
+    to identify activists and bridge participants and give them the ``Push``
+    power.
+
+    \begin{figure}
+      \begin{center}
+        \includegraphics[scale=1.4]{../images/userprofiles.png}
+        \caption{Profiles identified by Empurrando Juntos}
+        \label{fig:user-profiles}
+      \end{center}
+    \end{figure}
+  \end{itemize}
+\end{block}
+
 \begin{block}{System Architecture}
 	\begin{itemize}
     \item Front-end application, written in React Native
@@ -173,7 +170,7 @@
 
   \begin{figure}
     \begin{center}
-      \includegraphics[scale=1.5]{../images/architecture-1.png}
+      \includegraphics[scale=1.3]{../images/polis4.png}
       \caption{Simplified architecture of the system}
       \label{fig:architecture}
     \end{center}
@@ -181,14 +178,15 @@
 \end{block}
 
 \begin{block}{Integration with Polis}
-\begin{itemize}
-  \item Based on an external user capability on Polis API (xID), Pushing Together
-  will create users and debates locally and just use polis clusters through xID
-  \item At the first moment, the webview of Polis consultations like group
-  exhibition and comments carousel will be used by Pushing Together UI
-  \item Some profiles can be calculated using Polis API (like the percentage of a
-  group a person is to know where the bridges are) but some could be made locally
+  \begin{itemize}
+    \item Other platforms can register the participation of their users on Polis
+    through the xID (external id) parameter in the API.
 
+    \item Polis conversations can be easily embed with javascript snippets.
+
+    \item E.J. calculates the profiles based on the conversation data, but future
+    implementations aims to include this features inside the core of the clusters
+    math and provide them easier through API endpoints.
   \end{itemize}
 \end{block}
 
@@ -197,8 +195,7 @@
     \item Pushing Together arise as a potential tool to bridge dialog between society and
     the state, making different analyzes about the opinion of the distinct groups
     and also opening new possibilities for the expression of these opinions with ``the
-    Push`` resource. Besides, the project was born with transparency and collaboration
-    principles, building a base for a prospective evolution.
+    Push`` resource.
 
     \item We are now working on a research to evolve the clustering service that
     will fit our application model. Parallelly, our next steps include evolving the
