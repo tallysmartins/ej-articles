@@ -33,7 +33,7 @@
 \and Henrique Parra
 \and Paulo Meirelles
 }
-\institute[UNB/CD]{University of Brasília and Cidade Democrática NGO, Brazil}
+\institute[UNB/CD]{University of Brasília and Cidade Democrática Institute, Brazil}
 
 \newlength{\columnheight}
 \setlength{\columnheight}{105cm}
@@ -50,14 +50,14 @@
         \begin{minipage}[T]{.95\textwidth}
           \parbox[t][\columnheight]{\textwidth}{
 
-\begin{block}{Facing the bubbles}
+\begin{block}{Bubbles of Opinions}
   \begin{itemize}
 
-    \item Civic tech platforms with threaded arquiteture are getting restricted to
-    the activist profile not engaging many people.
+    \item Civic tech platforms with threaded architecture are a barrier for
+    engagement of regular and lay people. 
 
-    \item Popular social media recommendation algorithms are black boxes based on
-    a publicity oriented business model.
+    \item Popular social media recommendation algorithms are black boxes 
+    oriented by business interests.
 
     \item Engines and systems are specialized in analyzing our profiles. We only receive
     content about what we like, what we follow and what our friends see.
@@ -94,20 +94,20 @@
   \begin{figure}
     \begin{center}
       \includegraphics[scale=1.1]{../images/polis3.png}
-      \caption{Groups of opinion formed by Polis}
+      \caption{Groups of opinion formed by Polis about Brazilian education reform}
       \label{fig:group-clusters}
     \end{center}
   \end{figure}
 \end{block}
 
-\begin{block}{What is Empujando Juntos}
+\begin{block}{What is Empujando Juntos?}
 
   \begin{itemize}
     \item A Free Open Source Software for social participation that aims to
     increase communication between majority and minority, blowing bubbles of
     opinion.
 
-    \item An platform built on top of Polis that offers new features
+    \item A platform built on top of Polis that offers new features
     with gamification concepts.
 
     \item A tool that allows activists and non extremist people to engage regular
@@ -155,33 +155,37 @@
     \item Monitor Polis conversations created through the App
     to identify activists and bridge participants and give them the ``Push``
     power.
-
-    \begin{figure}
-      \begin{center}
-        \includegraphics[scale=1.4]{../images/userprofiles.png}
-        \caption{Profiles identified by Empurrando Juntos}
-        \label{fig:user-profiles}
-      \end{center}
-    \end{figure}
   \end{itemize}
+
+\end{block}
+
+\begin{block}{Profiles identified by Empurrando Juntos}
+  \begin{figure}
+    \begin{center}
+      \includegraphics[scale=1.4]{../images/userprofiles.png}
+      \caption{}
+      \label{fig:user-profiles}
+    \end{center}
+  \end{figure}
 \end{block}
 
 \begin{block}{System Architecture}
+
+  \begin{figure}
+    \begin{center}
+      \includegraphics[scale=1.3]{../images/polis4.png}
+      \label{fig:architecture}
+    \end{center}
+  \end{figure}
+
 	\begin{itemize}
     \item Front-end application, written in React Native
     and a NodeJS server.
 
     \item The server module is responsible for managing users, ``the Push'', and
-    to make the interface with Polis API
+    to make the interface with Polis API.
   \end{itemize}
 
-  \begin{figure}
-    \begin{center}
-      \includegraphics[scale=1.3]{../images/polis4.png}
-      \caption{Simplified architecture of the system}
-      \label{fig:architecture}
-    \end{center}
-  \end{figure}
 \end{block}
 
 \begin{block}{Integration with Polis}
