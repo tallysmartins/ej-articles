@@ -6,18 +6,19 @@
 \mode<presentation>
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-
+\definecolor{blue}{HTML}{00aed7}
+\definecolor{whiteblue}{HTML}{00aed7}
 %\setbeamercolor{headline}{fg=tabutter,bg=black}
-\setbeamercolor{headline}{fg=tabutter,bg=green!70!black}
+\setbeamercolor{headline}{bg=white!85!black!99!blue}
 \setbeamercolor{footline}{fg=white, bg=green!70!black}
 \setbeamerfont{footline}{size=\Large,series=\tt}
-\setbeamercolor{separation line}{bg=ta2orange}
-\setbeamercolor{title in headline}{fg=tabutter}
+\setbeamercolor{separation line}{bg=white}
+\setbeamercolor{title in headline}{fg=blue!90!black}
 \setbeamerfont{title in headline}{size=\Huge}
 %\setbeamercolor{author in headline}{fg=ta2orange}
-\setbeamercolor{author in headline}{fg=white}
+\setbeamercolor{author in headline}{fg=black}
 %\setbeamercolor{institute in headline}{fg=ta3orange}
-\setbeamercolor{institute in headline}{fg=white}
+\setbeamercolor{institute in headline}{fg=black}
 
 \setbeamercolor{framesubtitle}{fg=ta3orange, bg=ta2gray}
 %\setbeamercolor{author in head/foot}{fg=ta2orange, bg=black}
@@ -29,8 +30,7 @@
 \setbeamerfont{normal text}{size=\large}
 %\setbeamercolor*{block body}{bg=ta3aluminium,fg=black}
 \setbeamercolor*{block body}{bg=white,fg=black}
-%\setbeamercolor*{block title}{fg=taorange,bg=ta2gray}
-\setbeamercolor*{block title}{fg=white,bg=ta2orange}
+\setbeamercolor*{block title}{fg=white,bg=whiteblue!60!white}
 
 \setbeamerfont{block title}{size=\Large,series=\bf}
 \setbeamercolor{upper separation line head}{fg=tabutter}
@@ -52,7 +52,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamertemplate{block begin}{
   \vskip.75ex
-  \begin{beamercolorbox}[ht=3.5ex,dp=0.5ex,center,leftskip=-1em,colsep*=.75ex]{block title}%
+  \begin{beamercolorbox}[ht=4.0ex,dp=0.5ex,center,leftskip=-1em,colsep*=.75ex]{block title}%
     \usebeamerfont*{block title}%
     {\phantom{Gg}\insertblocktitle}% phantom because of baseline problem
   \end{beamercolorbox}%
@@ -71,24 +71,29 @@
 
   \begin{beamercolorbox}[wd=\paperwidth]{headline}
     \begin{columns}[T]
-      \begin{column}{.02\paperwidth}
+      \begin{column}{.20\paperwidth}
+        \vskip12ex
+        \begin{center}
+          \includegraphics[width=0.6\linewidth]{figures/unb-logo.eps}
+        \end{center}
       \end{column}
-      \begin{column}{.7\paperwidth}
-        \vskip4ex
-        \raggedleft
-        \usebeamercolor{title in headline}{\color{fg}\textbf{\Huge{\inserttitle}}\\[1ex]}
-        \usebeamercolor{author in headline}{\color{fg}\large{\insertauthor}\\[1ex]}
-        \usebeamercolor{institute in headline}{\color{fg}\large{\insertinstitute}\\[1ex]}     
+      \begin{column}{.50\paperwidth}
+        \begin{center}
+          \vskip2ex
+          \usebeamercolor{title in headline}{\color{fg}\textbf{\Huge{\inserttitle}}\\[1ex]}
+          \usebeamercolor{author in headline}{\color{fg}\large{\insertauthor}\\[1ex]}
+          \usebeamercolor{institute in headline}{\color{fg}\large{\insertinstitute}\\[1ex]}     
+        \end{center}
       \end{column}
-      \begin{column}{.125\paperwidth}
-        %\vskip8ex
+      \begin{column}{.20\paperwidth}
         \vskip5ex
         \begin{center}
-          \includegraphics[width=1.45\linewidth]{figures/usp/logos/LogoUSP.png}
+          \includegraphics[width=.8\linewidth]{figures/cidadedemocratica.png}
+        \end{center}
+        \begin{center}
+          \includegraphics[width=.8\linewidth]{figures/lappis.eps}
         \end{center}
         %\vskip2ex
-      \end{column}
-      \begin{column}{.02\paperwidth}
       \end{column}
     \end{columns}
     \vskip2ex
@@ -119,14 +124,13 @@
     \color{white}
     \texttt{ www.cidadedemocratica.org.br }
     \hfill
-    \hfill
     \texttt{\{ricardo,henrique\}@cidadedemocratica.org.br}
     \hfill
     \vskip1ex
   \end{beamercolorbox}
   \vskip0pt%
   \begin{beamercolorbox}[wd=\paperwidth]{lower separation line foot}
-    \rule{0pt}{0pt}
+    \rule{0pt}{2pt}
   \end{beamercolorbox}
 }
 
