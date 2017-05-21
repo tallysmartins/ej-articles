@@ -11,31 +11,34 @@ block slides
   +slide('-1000', '-1500')
     h1 Have you heard about bubbles of opinion?
     ul.small
-      li A minor part of people are engaged in online discussions, usually the activists
+      li A minor part of people get engaged in online discussions, usually the activists
       li Recommendation systems, specialized in our profiles control what we see. Black box engines oriented by business interests
-      li The voice of minorities is usually despised
+      li.like We are hostages of what we <img src='images/like.svg' style='width: 100px;'> and <img src='images/follow.png' style='width: 124px;'>
 
   +slide()
     h1 Bubbles, bubbles everywhere
     ul.small
-      li Most of us already witnessed any extremist person in our social networks
-      img(src="images/religion-extremist.jpg", style='width: 500px; margin-left: 85px')
+      li Regular citizens are easy targets for manipulation 
+      img(src="images/trumpVShilary.jpg", style='width: 600px;margin-left: 40px; margin-top: 30px;')
+
+  +slide()
+    h1 Bubbles, bubbles everywhere
+    ul.small
+      li Extremist people, blind to other's opinions
+      img(src="images/religion-extremist.jpg", style='width: 530px; margin-left: 85px; margin-top: 30px;')
 
   +slide()
     ul.small
       li Also, fake news are all around
-      img(src="images/einsten.jpg", style='width: 510px; margin-left: 85px')
+      img(src="images/einsten.jpg", style='width: 510px; margin-left: 85px; margin-top: 30px;')
 
   +slide()
     ul.small
-      li Common thread/forum architectures does not facilitate the discussion and communication<sup>*</sup>
+      li And platforms that make a barrier for discussion and communication with thread/forum architectures
       img(src="images/fb-thread.png", style='width: 510px; margin-top: 30px; margin-left: 85px')
 
-    p.tiny.right <sup>*</sup>Too much effort to process all generated information 
-
-
   +slide()
-    h1 From the dust came Polis
+    h1 So, from the dust came Polis
     ul.small
       li A web tool that uses A.I. to show different opinion groups in a discussion
       li Applies clustering algorithms to identify the opinion groups
@@ -49,13 +52,17 @@ block slides
       img(src="../../images/polis3.png", style='width: 600px; margin-left: 90px; margin-top: 10px')
 
   +step('0', '0', '4')#title
-    h2.center Empurrando Juntos is a extension on top of Polis API
+    span.try But we want to go
+    h1 beyond<sup>*</sup>
+    br
+    span.footnote <sup>*</sup>Because Polis stops on visualization
+    br
 
   +step('850', '3000', '5', {rotate: 90})#try
     p What we want?
     ul.small
-      li Go beyond Polis with new features
-      li Build a platform to increase interaction between different opinion groups
+      li Bring new features to participation
+      li Build a platform to increase interaction between the different opinion groups
       li Blow the bubbles of opinion
 
   +step('3500', '4100', '5', {rotate: 90})
@@ -63,7 +70,7 @@ block slides
     ul.small
       li We obtain opinion groups from Polis
       li Using gamification concepts we created <b><u>the Push</u></b>
-      li Push owners create events and send messages to other groups
+      li Push owners will be able to create events and send messages to other groups
 
   +step('3500', '8100', '5', {rotate: 90})
     p Who gets the push?
@@ -95,8 +102,7 @@ block slides
     h1 Final Remarks
     ul.small
       li EJ arise as a potential tool to bridge dialog between society and state
-      li The Push resource tries to bring interaction between groups, mitigating
-      the bubbles problem
+      li The Push resource tries to bring interaction between groups, mitigating the bubbles problem
       li We are now working on a research to evolve the clustering service
 
   +slide('3000', '500', '1', {rotate: 90})
